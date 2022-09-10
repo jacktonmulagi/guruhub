@@ -175,7 +175,7 @@ function Hero() {
                             </span>
                             <span className={styles.leftHeroDescription}>
 
-                                Exercitation quis ipsum officia adipisicing esse magna. Minim consectetur ea eu magna. Culpa irure deserunt ea adipisicing est.
+                                Don`t just drink the coffee , taste the coffee
                             </span>
                             <span className={styles.heroButtons}>
                                 SHOP HERE
@@ -208,7 +208,7 @@ function Hero() {
                             </span>
                             <span className={styles.leftHeroDescription}>
 
-                                Exercitation quis ipsum officia adipisicing esse magna. Minim consectetur ea eu magna. Culpa irure deserunt ea adipisicing est.
+                                Pazoori  -The Spirit Of Coffee
                             </span>
                             <span className={styles.heroButtons}>
                                 SHOP HERE
