@@ -1,9 +1,6 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import FeedBack from '../components/feedBack/FeedBack'
 import Footer from '../components/footer/Footer'
 import GalleryMain from '../components/gallery/GalleryMain'
-
 import Herald from '../components/herald/Herald'
 import Hero from '../components/hero/Hero'
 import ImageDivide from '../components/imageDivide/ImageDivide'
@@ -12,6 +9,7 @@ import OnlineShop from '../components/onlineshop/OnlineShop'
 import Offer from '../components/ourdeliciousoffer/Offer'
 import Stats from '../components/statistics/Stats'
 import White from '../components/white/White'
+
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -28,7 +26,7 @@ export default function Home() {
         <Hero/>
         <Offer/>
         <Herald/>
-        <White />
+        <White/>
         <ImageDivide/>
         <Stats/>
         <OnlineShop/>
