@@ -17,28 +17,37 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Pazoori</title>
-        <meta name="description" content=" Pazoori  -The Spirit Of Coffee" />
+        <meta name="description" content="best coffee near me">
+        </meta>
+        <meta property="og:title" content="Get your favorite coffee from us in minutes">
+        </meta>
+        <meta property="og:description" content="At Pazoori we value our clients ">
+        </meta>
+        <meta property="og:url" content="https://www.pazoori.com/">
+
+        </meta><meta property="og:type" content="website">
+        </meta>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
-        <NavBar/>
-        <Hero/>
-        <Offer/>
-        <Herald/>
-        <White/>
-        <ImageDivide/>
-        <Stats/>
-        <OnlineShop/>
+        <NavBar />
+        <Hero />
+        <Offer />
+        <Herald />
+        <White />
+        <ImageDivide />
+        <Stats />
+        <OnlineShop />
         <GalleryMain />
         {/* <FeedBack/> */}
-        <Footer/>
-      
-       
+        <Footer />
+
+
       </main>
 
       <footer className={styles.footer}>
-       
+
       </footer>
     </div>
   )
