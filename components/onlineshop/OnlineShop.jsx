@@ -72,7 +72,6 @@ function OnlineShop() {
 
                     draggable={showDraggable}
                     showDots={showArrowsControl}
-                    removeArrowOnDeviceType={["tablet", "mobile"]}
                     responsive={responsive}
                     ssr={false} // means to render carousel on server-side.
                     infinite={infiniteControl}
