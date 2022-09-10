@@ -1,0 +1,49 @@
+.main {
+    width: 100%;
+    display: flex;
+    margin-top: 0vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5)15%, rgba(0, 0, 0, 0)),
+        url('../../public/asserts/imageDividerBackground.jpg');
+    animation: breath 15s linear infinite;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Marcellus',
+        sans-serif;
+    transition: all 0.9s ease;
+
+}
+
+@keyframes breath {
+    0% {
+        background-size: 100% auto;
+    }
+
+    50% {
+        background-size: 105% auto;
+    }
+
+    100% {
+        background-size: 100% auto;
+    }
+}
+
+
+.mainMobile {
+    width: 100%;
+    display: flex;
+    margin-top: 0vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5)15%, rgba(0, 0, 0, 0)),
+        url('../../public/asserts/imageDividerBackground.jpg');
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Marcellus',
+        sans-serif;
+    transition: all 0.9s ease;
+
+}

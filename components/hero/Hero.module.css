@@ -1,0 +1,355 @@
+.main {
+    width: 100%;
+    display: flex;
+    margin-top: 0vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5)15%, rgba(0, 0, 0, 0)),
+        url('../../public/asserts/sliderOne.jpg');
+    animation: breath 10s linear infinite;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Marcellus',
+        sans-serif;
+    transition: all 1s ease-out;
+
+}
+
+.main1 {
+    width: 100%;
+    display: flex;
+    margin-top: 0vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image:
+        url('../../public/asserts/sliderTwo.jpg');
+    animation: breath 10s linear infinite;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Marcellus',
+        sans-serif;
+    transition: all 1s ease-out;
+
+}
+
+
+
+.leftHero {
+    width: 50%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+
+
+}
+
+.leftHeroLine {
+    display: flex;
+    width: 0%;
+    border-bottom: 1px solid #fff;
+
+}
+
+.leftHeroTitle {
+    display: flex;
+    font-size: 90px;
+    font-family: 'Marcellus',
+        sans-serif;
+
+}
+
+.leftHeroImage {
+    display: flex;
+
+
+}
+
+.leftHeroCoffeeBeans {
+    display: flex;
+    align-items: center;
+}
+
+.rightHero {
+    width: 40%;
+
+
+}
+
+.leftHeroDescription {
+    display: flex;
+    text-align: center;
+    font-size: 23px;
+    font-weight: lighter;
+
+}
+
+.heroButtons {
+    display: flex;
+    border: 1px solid #fff;
+    padding: 20px 40px;
+
+}
+
+.heroButtons:hover {
+    background-color: #bb9c79;
+    cursor: pointer;
+
+}
+
+.main2 {
+    width: 100%;
+    display: flex;
+    margin-top: 0vh;
+   
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image:
+        url('../../public/asserts/sliderThree.jpg');
+    animation: breath 10s linear infinite;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Marcellus',
+        sans-serif;
+    transition: all 1s ease-out;
+
+}
+
+@keyframes breath {
+    0% {
+        background-size: 100% auto;
+    }
+
+    50% {
+        background-size: 105% auto;
+    }
+
+    100% {
+        background-size: 100% auto;
+    }
+}
+
+.heroLeft {
+    display: flex;
+    width: 50%;
+    padding-left: 2%;
+    font-family: 'Marcellus',
+        sans-serif;
+}
+
+.heroDescription {
+    display: flex;
+    flex-direction: column;
+    width: 73%;
+    padding-top: 15%;
+    gap: 0.5em;
+    font-family: 'Marcellus',
+        sans-serif;
+
+
+}
+
+.brownGrain {
+    display: flex;
+    width: 27%;
+    align-items: flex-start;
+    padding-top: 15%;
+
+
+}
+
+
+
+.title {
+    font-size: 64px;
+    font-weight: lighter;
+    font-family: 'Marcellus',
+        sans-serif;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+    .main1 {
+        width: 100%;
+        display: none;
+        margin-top: 0vh;
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url('../../public/asserts/sliderTwo.jpg');
+        /* animation: breath 20s linear infinite; */
+        color: white;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .main2 {
+        width: 100%;
+        display: flex;
+        margin-top: 0vh;
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url('../../public/asserts/sliderThree.jpg');
+        animation: breath 10s linear infinite;
+        color: white;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .main {
+        width: 100%;
+        display: flex;
+        margin-top: 0vh;
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url('../../public/asserts/sliderOne.jpg');
+        animation: breath 15s linear infinite;
+        color: white;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .main1Mobile {
+        width: 100%;
+        display: flex;
+        margin-top: 0vh;
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9)15%, rgba(0, 0, 0, 0)),
+            url('../../public/asserts/sliderTwo.jpg');
+        color: white;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .main2Mobile {
+        width: 100%;
+        display: flex;
+        margin-top: 0vh;
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9)15%, rgba(0, 0, 0, 0)),
+            url('../../public/asserts/sliderOne.jpg');
+        color: white;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .main3Mobile {
+        width: 100%;
+        display: flex;
+        margin-top: 0vh;
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9)15%, rgba(0, 0, 0, 0)),
+            url('../../public/asserts/sliderThree.jpg');
+        color: white;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .leftHero {
+        width: 100%;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        justify-content: center;
+    }
+
+    .leftHeroTitle {
+        display: flex;
+        font-size: 50px;
+        font-family: 'Marcellus',
+            sans-serif;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    .leftHeroDescription {
+        display: flex;
+        text-align: center;
+        font-size: 18px;
+        font-weight: normal;
+
+    }
+
+    @keyframes breath {
+        0% {
+            background-size: 100% 100vh;
+        }
+
+        50% {
+            background-size: 105% 100vh;
+        }
+
+        100% {
+            background-size: auto 100vh;
+        }
+    }
+
+
+
+}
+
+@media (max-width: 320px) {
+    .main1Mobile {
+        width: 100%;
+        display: flex;
+        margin-top: 0vh;
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url('../../public/asserts/sliderTwo.jpg');
+        color: white;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .leftHeroTitle {
+        display: flex;
+        font-size: 30px;
+        font-family: 'Roboto',
+            sans-serif;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+    }
+}

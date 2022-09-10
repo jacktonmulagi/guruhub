@@ -1,0 +1,145 @@
+.container {
+    display: flex;
+    height: 40vh;
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    flex-direction: column;
+    gap: 3rem;
+    color: #262626;
+    font-family: 'Marcellus',
+        sans-serif;
+}
+
+.upperSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.8rem;
+}
+
+.upperSectionTitle {
+    font-weight: normal;
+    font-size: 45px;
+    letter-spacing: 2px;
+
+}
+
+.upperSectionParagraph {
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    width: 50%;
+    font-weight: lighter;
+    font-size: 18px;
+
+
+}
+
+.lowerSection {
+    display: flex;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.lowerSectionChildren {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.9rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+.lowerSectionTitle {
+    font-size: 24px;
+    letter-spacing: 3px;
+
+}
+
+.lowerSectionParagraph {
+    display: flex;
+    width: 90%;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.numberStats {
+    font-size: 50px;
+    color: rgba(190, 156, 121, 255)
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        display: flex;
+        height: max-content;
+        padding-top: 5%;
+        padding-left: 2%;
+        padding-right: 2%;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .upperSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 0.8rem;
+    }
+
+    .upperSectionTitle {
+        font-weight: normal;
+        font-size: 25px;
+        letter-spacing: 2px;
+
+    }
+
+    .upperSectionParagraph {
+        text-align: center;
+        letter-spacing: 1px;
+        line-height: 1.6;
+        width: 100%;
+        font-weight: lighter;
+        font-size: 18px;
+
+
+    }
+
+    .lowerSection {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+
+    .lowerSectionChildren {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    .lowerSectionTitle {
+        font-size: 18px;
+    }
+
+    .lowerSectionParagraph {
+        display: flex;
+        width: 100%;
+        text-align: center;
+        font-weight: lighter;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+
+}

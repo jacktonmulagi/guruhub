@@ -1,0 +1,429 @@
+.container {
+    display: flex;
+    padding-top: 0%;
+    flex-direction: column;
+    height: max-content;
+    gap: 3rem;
+    color: #262626;
+    font-family: 'Marcellus',
+        sans-serif;
+    transition: all 1s ease-out;
+    margin-bottom: 9.0%;
+}
+
+.upperSection {
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.8rem;
+}
+
+
+
+.upperSectionTitle {
+    font-weight: normal;
+    font-size: 45px;
+    letter-spacing: 2px;
+
+}
+
+.upperSectionParagraph {
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    width: 50%;
+    font-weight: lighter;
+    font-size: 18px;
+
+
+}
+
+.lowerSection {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 100%;
+    height: max-content;
+    padding-left: 0%;
+    padding-right: 0%;
+    gap: 0.2rem;
+   
+}
+
+.imageGallery {
+    display: flex;
+    margin-bottom: 0vh;
+    height: 500px;
+    max-width: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image:
+        url('../../public/asserts/gallerOne.jpg');
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.imageGallery:hover {
+    display: flex;
+    margin-top: 0vh;
+    height: 500px;
+    max-width: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+
+
+.imageGalleryTwo {
+    display: flex;
+    margin-top: 0vh;
+    height: 500px;
+    max-width: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image:
+        url('../../public/asserts/gallaryTwo.jpg');
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.imageGalleryTwo:hover {
+    display: flex;
+    margin-top: 0vh;
+    height: 500px;
+    max-width: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.imageGalleryThree {
+    display: flex;
+    margin-top: 0vh;
+    height: 500px;
+    max-width: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image:
+        url('../../public/asserts/gallaryThree.jpg');
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.imageGalleryThree:hover {
+    display: flex;
+    margin-top: 0vh;
+    height: 500px;
+    max-width: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+
+.imageGalleryFour {
+    display: flex;
+    margin-top: 0vh;
+    height: 500px;
+    max-width: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image:
+        url('../../public/asserts/gallaryFour.jpg');
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.imageGalleryFour:hover {
+    display: flex;
+    margin-top: 0vh;
+    height: 500px;
+    max-width: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.imageGalleryFive {
+    display: flex;
+    margin-top: 0vh;
+    height: 500px;
+    max-width: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image:
+        url('../../public/asserts/gallaryFive.jpg');
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.imageGalleryFive:hover {
+    display: flex;
+    margin-top: 0vh;
+    height: 500px;
+    max-width: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+
+.imageGallerySix {
+    display: flex;
+    margin-top: 0vh;
+    height: 500px;
+    max-width: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image:
+        url('../../public/asserts/gallarySix.jpg');
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.imageGallerySix:hover {
+    display: flex;
+    margin-top: 0vh;
+    height: 500px;
+    max-width: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.imageGallerySeven {
+    display: flex;
+    margin-top: 0vh;
+    height: 500px;
+    max-width: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image:
+        url('../../public/asserts/gallarySeven.jpg');
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.imageGallerySeven:hover {
+    display: flex;
+    margin-top: 0vh;
+    height: 500px;
+    max-width: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.imageGalleryEight {
+    display: flex;
+    margin-top: 0vh;
+    height: 500px;
+    max-width: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image:
+        url('../../public/asserts/gallaryEight.jpg');
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.imageGalleryEight:hover {
+    display: flex;
+    margin-top: 0vh;
+    height: 500px;
+    max-width: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.imageCaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.imageCaptionTitle {
+    font-size: 26px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.imageCaptionText {
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: normal;
+}
+
+.lowerSectionChildren {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+.lowerSectionTitle {
+    font-size: 18px;
+}
+
+.lowerSectionParagraph {
+    display: flex;
+    width: 60%;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        display: flex;
+        height: max-content;
+        padding-top: 5%;
+        padding-left: 0%;
+        padding-right: 0%;
+        flex-direction: column;
+        gap: 3rem;
+         margin-bottom: 0%;
+
+    }
+
+    .upperSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 0.8rem;
+    }
+
+    .upperSectionTitle {
+        font-weight: normal;
+        font-size: 25px;
+        letter-spacing: 2px;
+
+    }
+
+    .upperSectionParagraph {
+        text-align: center;
+        letter-spacing: 1px;
+        line-height: 1.6;
+        width: 100%;
+        font-weight: lighter;
+        font-size: 18px;
+
+
+    }
+
+    .lowerSection {
+        display: grid;
+        grid-template-columns: auto;
+        width: 100%;
+        padding-left: 0%;
+        padding-right: 0%;
+        gap: 0rem
+    }
+
+
+
+    .lowerSectionChildren {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    .lowerSectionTitle {
+        font-size: 18px;
+    }
+
+    .lowerSectionParagraph {
+        display: flex;
+        width: 100%;
+        text-align: center;
+        font-weight: lighter;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+
+}
