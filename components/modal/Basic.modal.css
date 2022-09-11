@@ -1,0 +1,57 @@
+.main{
+    display: flex;
+    justify-content: center;
+}
+.action{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center
+}
+.title{
+    width:50%
+}
+
+.login__button{
+     display:flex;
+    justify-content:center;
+    background-color: #1B9547;
+    width: 70%;
+    padding: 10px 1px;
+    border-radius: 5px;
+    margin-top: 10px;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+}
+.login__button:hover{
+     background-color: #3997CC;
+     cursor: pointer;
+     color: #fff;
+}
+.login__button__container{
+     display: flex;
+   justify-content:center
+}
+
+.decline__button{
+     display:flex;
+    justify-content:center;
+    background-color: red;
+    width: 70%;
+    padding: 10px 1px;
+    border-radius: 5px;
+    margin-top: 10px;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+}
+.decline__button:hover{
+     background-color: red;
+     cursor: pointer;
+     color: black;
+}
+.decline__button__container{
+     display: flex;
+   justify-content:center
+}

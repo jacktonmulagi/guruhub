@@ -2,7 +2,7 @@
     display: flex;
     height: 100vh;
     padding-top: 5%;
-    
+
     flex-direction: column;
     width: 100%;
     gap: 2rem;
@@ -10,7 +10,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url('../../public/asserts/onlineCoffeeShop.jpg');
-  
+
 }
 
 .upperSection {
@@ -44,10 +44,10 @@
 .lowerSection {
     display: grid;
     grid-template-columns: auto auto auto;
-   padding-left: 10%;
-   padding-right: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
     height: max-content;
-   
+
 }
 
 .lowerSectionChildren {
@@ -64,14 +64,17 @@
 .lowerSectionTitle {
     font-size: 20px;
 }
-.lowerSectionChild{
-     cursor: pointer;
-     transition: all 0.3s;
+
+.lowerSectionChild {
+    cursor: pointer;
+    transition: all 0.3s;
 
 }
+
 .lowerSectionChild:hover {
     transform: scale(1.2) rotate(5deg);
 }
+
 .lowerSectionParagraph {
     display: flex;
     width: 100%;
@@ -134,23 +137,25 @@
     .lowerSection {
         display: flex;
         flex-direction: column;
-        width: 100w;
+        width: 100%;
         padding-left: 1%;
         padding-right: 1%;
+
     }
 
     .lowerSectionChildren {
         display: flex;
         flex-direction: column;
-        align-items: left;
-        gap: 0.5rem;
+        align-items: center;
+        gap: 0.4rem;
         cursor: pointer;
         width: 100%;
-        padding-bottom:10%;
+        height: 100%;
+        padding-bottom: 10%;
     }
 
     .lowerSectionTitle {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .lowerSectionParagraph {
@@ -158,7 +163,7 @@
         width: 100%;
         text-align: left;
         font-weight: lighter;
-        font-size: 16px;
+        font-size: 13px;
         line-height: 1.5;
     }
 

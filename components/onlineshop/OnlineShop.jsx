@@ -8,6 +8,7 @@ import eppresoMachine from '../../public/asserts/eppresoMachine.png'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import Link from 'next/link'
+import { useStateContext } from '../../context/StateContext'
 
 function OnlineShop() {
     const [infiniteControl, setInfiniteControl] = useState(false);
@@ -15,6 +16,7 @@ function OnlineShop() {
     const [showAutoPlay, setShowAutoPlay] = useState(true);
     const [showDraggable, setShowDraggable] = useState(false);
     const [showMobile, setShowMobile] = useState(false);
+    const { handleModalAction } = useStateContext();
 
     const responsive = {
         desktop: {
@@ -83,102 +85,102 @@ function OnlineShop() {
                     autoPlay={showAutoPlay}
                     pauseOnHover={true}
                 >
-                    <Link href='/#contactUs'>
-                        <span className={styles.lowerSectionChildren}>
-                            <span className={styles.lowerSectionChild}>
-                                <Image src={ethiopian} alt={"ethiopian"} height={showMobile ? "200" : "350"} width={showMobile ? "250" : "500"} />
-                            </span>
-                            <span className={styles.lowerSectionTitle}>
-                                Pazoori coffee 500 grams
 
-                            </span>
-                            <span className={styles.lowerSectionParagraph}>
-                                Ksh 1500.00
-                            </span>
-
+                    <span className={styles.lowerSectionChildren} onClick={() => handleModalAction(1, "deleteSms")}>
+                        <span className={styles.lowerSectionChild}>
+                            <Image src={ethiopian} alt={"ethiopian"} height={showMobile ? "300" : "350"} width={showMobile ? "400" : "500"} />
+                        </span>
+                        <span className={styles.lowerSectionTitle}>
+                            Pazoori coffee 500 grams
 
                         </span>
-                    </Link>
-                    <Link href='/#contactUs'>
-                        <span className={styles.lowerSectionChildren}>
-                            <span className={styles.lowerSectionChild}>
-                                <Image src={ethiopian} alt={"ethiopian"} height={showMobile ? "200" : "350"} width={showMobile ? "250" : "500"} />
-                            </span>
-                            <span className={styles.lowerSectionTitle}>
-                                Pazoori coffee 1Kgs
+                        <span className={styles.lowerSectionParagraph}>
+                            Ksh 1500.00
+                        </span>
 
-                            </span>
-                            <span className={styles.lowerSectionParagraph}>
-                                Ksh 2500.00
-                            </span>
 
+                    </span>
+
+
+                    <span className={styles.lowerSectionChildren} onClick={() => handleModalAction(1, "deleteSms")}>
+                        <span className={styles.lowerSectionChild}>
+                            <Image src={ethiopian} alt={"ethiopian"} height={showMobile ? "300" : "350"} width={showMobile ? "400" : "500"} />
+                        </span>
+                        <span className={styles.lowerSectionTitle}>
+                            Pazoori coffee 1Kgs
 
                         </span>
-                    </Link>
-                    <Link href='/#contactUs'>
-                        <span className={styles.lowerSectionChildren}>
-                            <span className={styles.lowerSectionChild}>
-                                <Image src={ethiopian} alt={"ethiopian"} height={showMobile ? "200" : "350"} width={showMobile ? "250" : "500"} />
-                            </span>
-                            <span className={styles.lowerSectionTitle}>
-                                Pazoori coffee 3Kgs
+                        <span className={styles.lowerSectionParagraph}>
+                            Ksh 2500.00
+                        </span>
 
-                            </span>
-                            <span className={styles.lowerSectionParagraph}>
-                                Ksh 3500.00
-                            </span>
 
+                    </span>
+
+
+                    <span className={styles.lowerSectionChildren} onClick={() => handleModalAction(1, "deleteSms")}>
+                        <span className={styles.lowerSectionChild}>
+                            <Image src={ethiopian} alt={"ethiopian"} height={showMobile ? "300" : "350"} width={showMobile ? "400" : "500"} />
+                        </span>
+                        <span className={styles.lowerSectionTitle}>
+                            Pazoori coffee 3Kgs
 
                         </span>
-                    </Link>
-                    <Link href='/#contactUs'>
-                        <span className={styles.lowerSectionChildren}>
-                            <span className={styles.lowerSectionChild}>
-                                <Image src={coffeePress} alt={"coffeePress"} height={showMobile ? "180" : "350"} width={showMobile ? "300" : "300"} />
-                            </span>
-                            <span className={styles.lowerSectionTitle}>
-                                FRENCH PRESS
+                        <span className={styles.lowerSectionParagraph}>
+                            Ksh 3500.00
+                        </span>
 
-                            </span>
-                            <span className={styles.lowerSectionParagraph}>
-                                Ksh 2300
-                            </span>
 
+                    </span>
+
+
+                    <span className={styles.lowerSectionChildren} onClick={() => handleModalAction(1, "deleteSms")}>
+                        <span className={styles.lowerSectionChild}>
+                            <Image src={coffeePress} alt={"coffeePress"} height={showMobile ? "250" : "350"} width={showMobile ? "200" : "300"} />
+                        </span>
+                        <span className={styles.lowerSectionTitle}>
+                            FRENCH PRESS
 
                         </span>
-                    </Link>
-                    <Link href='/#contactUs'>
-                        <span className={styles.lowerSectionChildren}>
-                            <span className={styles.lowerSectionChild}>
-                                <Image src={eppresoMachine} alt={"eppresoMachine"} height={showMobile ? "250" : "350"} width={"500"} />
-                            </span>
-                            <span className={styles.lowerSectionTitle}>
-                                ESPRESSO MACHINE
+                        <span className={styles.lowerSectionParagraph}>
+                            Ksh 2300
+                        </span>
 
-                            </span>
-                            <span className={styles.lowerSectionParagraph}>
-                                Ksh 60000
-                            </span>
 
+                    </span>
+
+
+                    <span className={styles.lowerSectionChildren} onClick={() => handleModalAction(1, "deleteSms")}>
+                        <span className={styles.lowerSectionChild}>
+                            <Image src={eppresoMachine} alt={"eppresoMachine"} height={showMobile ? "400" : "350"} width={"500"} />
+                        </span>
+                        <span className={styles.lowerSectionTitle}>
+                            ESPRESSO MACHINE
 
                         </span>
-                    </Link>
-                    <Link href='/#contactUs'>
-                        <span className={styles.lowerSectionChildren}>
-                            <span className={styles.lowerSectionChild}>
-                                <Image src={ethiopian} alt={"ethiopian"} height={showMobile ? "200" : "350"} width={showMobile ? "250" : "500"} />
-                            </span>
-                            <span className={styles.lowerSectionTitle}>
-                                Pazoori coffee 100Kgs
+                        <span className={styles.lowerSectionParagraph}>
+                            Ksh 60000
+                        </span>
 
-                            </span>
-                            <span className={styles.lowerSectionParagraph}>
-                                Ksh 10500.00
-                            </span>
 
+                    </span>
+
+
+                    <span className={styles.lowerSectionChildren} onClick={() => handleModalAction(1, "deleteSms")}>
+                        <span className={styles.lowerSectionChild}>
+                            <Image src={ethiopian} alt={"ethiopian"} height={showMobile ? "300" : "350"} width={showMobile ? "400" : "500"} />
+                        </span>
+                        <span className={styles.lowerSectionTitle}>
+                            Pazoori coffee 100Kgs
 
                         </span>
-                    </Link>
+                        <span className={styles.lowerSectionParagraph}>
+                            Ksh 10500.00
+                        </span>
+
+
+                    </span>
+
 
                 </Carousel>
 

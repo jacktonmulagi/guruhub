@@ -4,15 +4,19 @@ import GalleryMain from '../components/gallery/GalleryMain'
 import Herald from '../components/herald/Herald'
 import Hero from '../components/hero/Hero'
 import ImageDivide from '../components/imageDivide/ImageDivide'
+import BasicModal from '../components/modal/BasicModal'
 import NavBar from '../components/navbar/NavBar'
 import OnlineShop from '../components/onlineshop/OnlineShop'
 import Offer from '../components/ourdeliciousoffer/Offer'
 import Stats from '../components/statistics/Stats'
 import White from '../components/white/White'
+import { useStateContext } from '../context/StateContext'
 
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
+  const { pendingModal
+  } = useStateContext();
   return (
     <div className={styles.container}>
       <Head>
@@ -32,6 +36,8 @@ export default function Home() {
 
       <main className={styles.main}>
         <NavBar />
+        {pendingModal ? <BasicModal/> :
+          null}
         <Hero />
         <Offer />
         <Herald />

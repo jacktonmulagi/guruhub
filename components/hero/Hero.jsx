@@ -6,6 +6,7 @@ import 'react-multi-carousel/lib/styles.css';
 import SlideOneDescribe from '../../public/asserts/HeroIcon.svg';
 import { GiCoffeeBeans } from 'react-icons/gi'
 import sliderSeparatorImg from '../../public/asserts/sliderSeparatorImg.png';
+import Link from 'next/link';
 
 function Hero() {
     const [mobileScreen, setMobileScreen] = useState(false)
@@ -145,9 +146,11 @@ function Hero() {
 
                                 We don’t make your coffee. We make your day.
                             </span>
-                            <span className={styles.heroButtons}>
-                                SHOP HERE
-                            </span>
+                            <Link href='/#products' >
+                                <span className={styles.heroButtons}>
+                                    SHOP HERE
+                                </span>
+                            </Link>
 
                         </span>
 
@@ -177,9 +180,12 @@ function Hero() {
 
                                 Don`t just drink the coffee , taste the coffee
                             </span>
-                            <span className={styles.heroButtons}>
-                                SHOP HERE
-                            </span>
+                            <Link href='/#products' >
+                                <span className={styles.heroButtons}>
+                                    SHOP HERE
+                                </span>
+                            </Link>
+
 
                         </span>
 
@@ -210,9 +216,12 @@ function Hero() {
 
                                 Pazoori  -The Spirit Of Coffee
                             </span>
-                            <span className={styles.heroButtons}>
-                                SHOP HERE
-                            </span>
+                            <Link href='/#products' >
+                                <span className={styles.heroButtons}>
+                                    SHOP HERE
+                                </span>
+                            </Link>
+
 
                         </span>
 
@@ -254,9 +263,11 @@ function Hero() {
 
                                 We don’t make your coffee. We make your day.
                             </span>
-                            <span className={styles.heroButtons}>
-                                SHOP HERE
-                            </span>
+                            <Link href='/#products' >
+                                <span className={styles.heroButtons}>
+                                    SHOP HERE
+                                </span>
+                            </Link>
 
                         </span>
 
@@ -286,9 +297,11 @@ function Hero() {
 
                                 Don`t just drink the coffee , taste the coffee
                             </span>
-                            <span className={styles.heroButtons}>
-                                SHOP HERE
-                            </span>
+                            <Link href='/#products' >
+                                <span className={styles.heroButtons}>
+                                    SHOP HERE
+                                </span>
+                            </Link>
 
                         </span>
 
@@ -319,9 +332,11 @@ function Hero() {
 
                                 Pazoori  -The Spirit Of Coffee
                             </span>
-                            <span className={styles.heroButtons}>
-                                SHOP HERE
-                            </span>
+                            <Link href='/#products' >
+                                <span className={styles.heroButtons}>
+                                    SHOP HERE
+                                </span>
+                            </Link>
 
                         </span>
 
