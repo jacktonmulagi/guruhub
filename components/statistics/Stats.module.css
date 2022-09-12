@@ -143,3 +143,55 @@
 
 
 }
+@media (max-width: 1280px) {
+  
+.numberStats {
+    font-size: 30px;
+    color: rgba(190, 156, 121, 255)
+}
+.lowerSectionParagraph {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.lowerSection {
+    display: flex;
+    width: 100%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.lowerSectionChildren {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+.lowerSectionTitle {
+    font-size: 18px;
+    letter-spacing: 3px;
+
+}
+
+.lowerSectionParagraph {
+    display: flex;
+    width: 90%;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.numberStats {
+    font-size: 50px;
+    color: rgba(190, 156, 121, 255)
+}
+
+
+}

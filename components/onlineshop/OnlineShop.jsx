@@ -16,6 +16,7 @@ function OnlineShop() {
     const [showAutoPlay, setShowAutoPlay] = useState(true);
     const [showDraggable, setShowDraggable] = useState(false);
     const [showMobile, setShowMobile] = useState(false);
+    const [showMacBook, setShowMacBook] = useState(false);
     const { handleModalAction } = useStateContext();
 
     const responsive = {
@@ -43,7 +44,14 @@ function OnlineShop() {
             setShowAutoPlay(false)
             setShowDraggable(true)
             setShowMobile(true)
-        } else {
+        } if (window.matchMedia("(max-width: 1280px)").matches) {
+            setInfiniteControl(false)
+            setShowArrowsControl(true)
+            setShowAutoPlay(false)
+            setShowDraggable(true)
+            setShowMacBook(true)
+        }
+         else {
             setInfiniteControl(true)
             setShowAutoPlay(true)
             setShowDraggable(false)
@@ -136,7 +144,7 @@ function OnlineShop() {
 
                     <span className={styles.lowerSectionChildren} onClick={() => handleModalAction(1, "deleteSms")}>
                         <span className={styles.lowerSectionChild}>
-                            <Image src={coffeePress} alt={"coffeePress"} height={showMobile ? "250" : "350"} width={showMobile ? "200" : "300"} />
+                            <Image src={coffeePress} alt={"coffeePress"} height={showMobile ? "250" : showMacBook ? "250" : "350"} width={showMobile ? "200" : "300"} />
                         </span>
                         <span className={styles.lowerSectionTitle}>
                             FRENCH PRESS

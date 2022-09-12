@@ -148,3 +148,20 @@
 
 
 }
+@media (max-width: 1280px) {
+    .container {
+        display: flex;
+        height: max-content;
+        padding-top: 4%;
+        padding-left: 5%;
+        padding-right: 5%;
+        flex-direction: column;
+        gap: 3rem;
+        color: #262626;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url('../../public/asserts/heraldBackground.jpg');
+    }
+    
+
+}

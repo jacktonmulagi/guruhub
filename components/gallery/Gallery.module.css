@@ -427,3 +427,17 @@
 
 
 }
+@media (max-width: 1280px) {
+    .container {
+        display: flex;
+        padding-top: 0%;
+        flex-direction: column;
+        height: max-content;
+        gap: 3rem;
+        color: #262626;
+        font-family: 'Marcellus',
+            sans-serif;
+        transition: all 1s ease-out;
+        margin-bottom: 27.0%;
+    }
+}

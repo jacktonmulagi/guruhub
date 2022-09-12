@@ -25,38 +25,7 @@ function GalleryMain() {
     }
 
 
-    const handleShadow = () => {
-      console.log(window.scrollY)
-
-      if (window.scrollY <= 3500) {
-        setHeight(100);
-      } else if (window.scrollY > 3500 && window.scrollY < 3700) {
-        setHeight(100);
-      }
-      else if (window.scrollY > 3700 && window.scrollY < 3900) {
-        setHeight(100);
-      } else if (window.scrollY > 3700 && window.scrollY < 4000) {
-        setHeight(100);
-      }
-      else if (window.scrollY > 4000 && window.scrollY < 4500) {
-        setHeight(100);
-      }
-      else if (window.scrollY > 4500 && window.scrollY < 4700) {
-        setHeight(100);
-      }
-      else if (window.scrollY > 4700 && window.scrollY < 4900) {
-        setHeight(100);
-      }
-      else if (window.scrollY > 4900 && window.scrollY < 5000) {
-        setHeight(90);
-      }
-      else if (window.scrollY > 5000) {
-        setHeight(90);
-      }
     
-
-    };
-    window.addEventListener('scroll', handleShadow);
 
     if (window.matchMedia("(max-width: 640px)").matches) {
       setMobileScreen(true)
