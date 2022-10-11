@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import styles from './Navbar.module.css'
 import Logo from '../../public/asserts/Logo.svg'
-import Logo1 from '../../public/asserts/mobileIcon.png'
 import Image from 'next/image'
 import { GiCoffeeBeans } from 'react-icons/gi';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
