@@ -31,7 +31,7 @@ export default function Home() {
 
         </meta><meta property="og:type" content="website">
         </meta>
-        <link rel="icon" href="/LIGHTBGICON.png" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
