@@ -2,7 +2,10 @@ import Head from 'next/head'
 import Footer from '../components/footer/Footer'
 import GalleryMain from '../components/gallery/GalleryMain'
 import Herald from '../components/herald/Herald'
-import Hero from '../components/hero/Hero'
+import Buyers from '../components/hero/Buyers'
+import Heaven from '../components/hero/Heaven'
+import Hero from '../components/hero/Heaven'
+import Masters from '../components/hero/Masters'
 import ImageDivide from '../components/imageDivide/ImageDivide'
 import BasicModal from '../components/modal/BasicModal'
 import NavBar from '../components/navbar/NavBar'
@@ -36,18 +39,35 @@ export default function Home() {
 
       <main className={styles.main}>
         <NavBar />
-        {pendingModal ? <BasicModal/> :
+        {pendingModal ? <BasicModal /> :
           null}
-        <Hero />
-        <Offer />
+        <div className={styles.snapContainer}>
+          <section className={styles.snapContainerChildren}>
+            <Heaven />
+          </section>
+          <section className={styles.snapContainerChildren}>
+            <Masters />
+          </section>
+          <section className={styles.snapContainerChildren}>
+            <Buyers />
+          </section>
+          <section className={styles.snapContainerChildren}>
+            <Footer />
+          </section>
+
+
+
+          {/* <Offer />
         <Herald />
         <White />
         <ImageDivide />
         <Stats />
         <OnlineShop />
-        <GalleryMain />
-        {/* <FeedBack/> */}
-        <Footer />
+        <GalleryMain /> */}
+          {/* <FeedBack/> */}
+
+        </div>
+
 
 
       </main>

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import styles from './Footer.module.css'
 import Logo from '../../public/asserts/Logo.svg'
 import map from '../../public/asserts/mapPin.svg'
+import phone from '../../public/asserts/contactUsPazoori.png'
 import facebook from '../../public/asserts/facebook.png'
 import instagram from '../../public/asserts/instagram.png'
 import twitter from '../../public/asserts/twitter.png'
@@ -11,6 +12,10 @@ import toast from 'react-hot-toast'
 import Image from 'next/image';
 function Footer() {
     const [mobileView, setMobileView] = useState(false);
+    const [mobileNumber, setMobileNumber] = useState("");
+    const [message, setMessage] = useState("");
+    const [name, setName] = useState("");
+
     useEffect(() => {
         toast.success('To make an order kindly send us your valid email address');
 
@@ -18,6 +23,22 @@ function Footer() {
             setMobileView(true)
         }
     }, []);
+
+
+    const handleLeads = (e) => {
+        e.preventDefault();
+
+        window.location.href = `mailto:Coffee@pazoori.com?subject=Coffee Inquiry
+        &body=Hi! I am ${name}. I would like to know more about your coffee  %0D%0A
+        %0D%0A%0D%0A
+
+        ${message}%0D%0A%0D%0A
+
+        Regards, %0D%0A
+        ${name}, %0D%0A
+        ${mobileNumber}`
+
+    }
     return (
         <div className={styles.container} id={"contactUs"}>
             <span className={styles.upperSection}>
@@ -47,6 +68,26 @@ function Footer() {
 
                     </span>
 
+
+                </span>
+                <span className={styles.address}>
+                    <span className={styles.addressTitle}>
+                        Mobile Number
+                    </span>
+                    <span className={styles.addressName}>
+                        <span>
+                            <Image src={phone} alt={"phone"} width={"50"} height={"50"} />
+                        </span>
+                        <span>
+                            <a href="tel: +254722478277">
+                                +254722478277
+                            </a>
+
+                        </span>
+
+                    </span>
+
+
                 </span>
                 <span className={styles.form}>
                     <span className={styles.formTitle}>
@@ -54,8 +95,7 @@ function Footer() {
                     </span>
                     <span>
                         <form
-                            action='https://getform.io/f/e98a6c9a-481f-404c-b581-7b09c5f54765'
-                            method='POST'
+                            onSubmit={handleLeads}
                             className={styles.formDetails}
                         >
                             <div className={styles.personalContact}>
@@ -63,9 +103,36 @@ function Footer() {
                                     <input
                                         className={styles.inputField}
                                         type='text'
-                                        name='email'
-                                        placeholder='email address'
+                                        name='name'
+                                        placeholder='name'
                                         required
+                                        onChange={(e) => setName(e.target.value)}
+                                    />
+                                </div>
+                            </div>
+
+                            <div className={styles.personalContact}>
+                                <div className={styles.inputLabelWrapper}>
+                                    <input
+                                        className={styles.inputField}
+                                        type='tel'
+                                        name='tel'
+                                        placeholder='mobile number'
+                                        required
+                                        onChange={(e) => setMobileNumber(e.target.value)}
+
+                                    />
+                                </div>
+                            </div>
+                            <div className={styles.personalContact}>
+                                <div className={styles.inputLabelWrapper}>
+                                    <input
+                                        className={styles.inputField}
+                                        type='text'
+                                        name='message'
+                                        placeholder='message'
+                                        required
+                                        onChange={(e) => setMessage(e.target.value)}
                                     />
                                 </div>
                             </div>
@@ -95,25 +162,15 @@ function Footer() {
                         </a>
                     </span>
 
+                   
                     <span className={styles.socialMediaWrapper}>
-                        <a href={"https://github.com"} target="_blank" rel="noreferrer">
-                            <Image src={twitter} alt={"twitter"} width={"90"} height={"90"} className={styles.socialIcons} />
-                        </a>
-
-                    </span>
-                    <span className={styles.socialMediaWrapper}>
-                        <a href={"https://api.whatsapp.com/send?phone=%2B254700309590&text&app_absent=0"} target="_blank" rel="noreferrer" >
+                        <a href={"https://api.whatsapp.com/send?phone=%2B254722478277&text&app_absent=0"} target="_blank" rel="noreferrer" >
 
 
                             <Image src={whatsapp} alt={"whatsapp"} width={"90"} height={"90"} className={styles.socialIcons} />
                         </a>
                     </span>
-                    <span className={styles.socialMediaWrapper}>
-                        <a href={"https://github.com"} target="_blank" rel="noreferrer">
-                            <Image src={tiktok} alt={"tiktok"} width={"90"} height={"90"} className={styles.socialIcons} />
-                        </a>
-
-                    </span>
+                    
 
                 </span>
 
