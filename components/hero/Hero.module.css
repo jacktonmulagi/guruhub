@@ -254,7 +254,7 @@
         height: 100vh;
         background-size: cover;
         background-repeat: no-repeat;
-        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9)15%, rgba(0, 0, 0, 0.4)),
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9)15%, rgba(0, 0, 0, 0.6)),
             url('../../public/asserts/sliderOne.jpg');
         color: white;
         flex-direction: column;
@@ -270,7 +270,7 @@
         height: 100vh;
         background-size: cover;
         background-repeat: no-repeat;
-        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9)15%, rgba(0, 0, 0, 0.4)),
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9)15%, rgba(0, 0, 0, 0.5)),
             url('../../public/asserts/sliderThree.jpg');
         color: white;
         flex-direction: column;
