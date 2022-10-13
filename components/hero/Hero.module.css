@@ -336,7 +336,7 @@
     }
 
     .coffeeLineHight {
-        line-height: 2;
+        line-height: 1.3rem;
         word-spacing: 0.0rem;
         text-align: center;
     }

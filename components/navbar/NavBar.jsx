@@ -28,6 +28,7 @@ function NavBar() {
     };
 
     useEffect(() => {
+
         const handleShadow = () => {
             console.log(window.scrollY)
             if (window.scrollY > 200) {
@@ -75,9 +76,9 @@ function NavBar() {
                     <span className={styles.mobileDrawerUpper}>
                         <Link href='/' >
                             <span className={styles.logoWrapper} onClick={() => handleNav()}>
-                            <Image src={Logo} alt="Logo" className={styles.logo} height={40} width={150} />
+                                <Image src={Logo} alt="Logo" className={styles.logo} height={40} width={150} />
 
-                        </span>
+                            </span>
                         </Link>
                         <span className={styles.menuIcon}>
                             <AiOutlineClose size={25} onClick={() => handleNav()} />
@@ -86,17 +87,17 @@ function NavBar() {
                     <span className={styles.mobileMenuList}>
                         <Link href='/' >
                             <span onClick={() => handleNav()} className={styles.mainNavLink} onMouseOver={() => handleMouseOver("Home")} onMouseOut={handleMouseOut}>
-                            {currentNavElementId == "Home" || router.pathname == "/" ? <span className={styles.activeNavWrapper}>
-                                <GiCoffeeBeans color='#8B621C' size={20} />
-                            </span> : null}
-                            <span>
-                                Home
-                            </span>
-                            {currentNavElementId == "Home" || router.pathname == "/" ? <span className={styles.activeNavWrapper}>
-                                <GiCoffeeBeans color='#8B621C' size={20} />
-                            </span> : null}
+                                {currentNavElementId == "Home" || router.pathname == "/" ? <span className={styles.activeNavWrapper}>
+                                    <GiCoffeeBeans color='#8B621C' size={20} />
+                                </span> : null}
+                                <span>
+                                    Home
+                                </span>
+                                {currentNavElementId == "Home" || router.pathname == "/" ? <span className={styles.activeNavWrapper}>
+                                    <GiCoffeeBeans color='#8B621C' size={20} />
+                                </span> : null}
 
-                        </span>
+                            </span>
                         </Link>
                         {/* <Link href='/#products' >
                             <span onClick={() => handleNav()} className={styles.mainNavLink} onMouseOver={() => handleMouseOver("Products")} onMouseOut={handleMouseOut}>
@@ -132,22 +133,22 @@ function NavBar() {
                         </span>
                         </Link> */}
                         <Link href='/#contactUs'>
-                        <span onClick={() => handleNav()} className={styles.mainNavLink} onMouseOver={() => handleMouseOver("ContactUs")} onMouseOut={handleMouseOut}>
-                            {currentNavElementId == "ContactUs" ? <span className={styles.activeNavWrapper}>
-                                <GiCoffeeBeans color='#8B621C' size={20} />
-                            </span> : null}
+                            <span onClick={() => handleNav()} className={styles.mainNavLink} onMouseOver={() => handleMouseOver("ContactUs")} onMouseOut={handleMouseOut}>
+                                {currentNavElementId == "ContactUs" ? <span className={styles.activeNavWrapper}>
+                                    <GiCoffeeBeans color='#8B621C' size={20} />
+                                </span> : null}
 
-                            <span>
-                                Contact us
+                                <span>
+                                    Contact us
+
+                                </span>
+                                {currentNavElementId == "ContactUs" ? <span className={styles.activeNavWrapper}>
+                                    <GiCoffeeBeans color='#8B621C' size={20} />
+                                </span> : null}
+
+
 
                             </span>
-                            {currentNavElementId == "ContactUs" ? <span className={styles.activeNavWrapper}>
-                                <GiCoffeeBeans color='#8B621C' size={20} />
-                            </span> : null}
-
-
-
-                        </span>
                         </Link>
                     </span>
 
@@ -203,18 +204,18 @@ function NavBar() {
                     </span>
                     </Link> */}
                     <Link href='/#contactUs'>
-                    <span className={styles.mainNavLink} onMouseOver={() => handleMouseOver("ContactUs")} onMouseOut={handleMouseOut}>
-                        {currentNavElementId == "ContactUs" ? <span className={styles.activeNavWrapper}>
-                            <GiCoffeeBeans color='#8B621C' size={20} />
-                        </span> : null}
+                        <span className={styles.mainNavLink} onMouseOver={() => handleMouseOver("ContactUs")} onMouseOut={handleMouseOut}>
+                            {currentNavElementId == "ContactUs" ? <span className={styles.activeNavWrapper}>
+                                <GiCoffeeBeans color='#8B621C' size={20} />
+                            </span> : null}
 
-                        <span>
-                            contact us
+                            <span>
+                                contact us
+                            </span>
+                            {currentNavElementId == "ContactUs" ? <span className={styles.activeNavWrapper}>
+                                <GiCoffeeBeans color='#8B621C' size={20} />
+                            </span> : null}
                         </span>
-                        {currentNavElementId == "ContactUs" ? <span className={styles.activeNavWrapper}>
-                            <GiCoffeeBeans color='#8B621C' size={20} />
-                        </span> : null}
-                    </span>
                     </Link>
 
                 </span>
