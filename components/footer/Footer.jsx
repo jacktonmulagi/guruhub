@@ -43,8 +43,8 @@ function Footer() {
         <div className={styles.container} id={"contactUs"}>
             <span className={styles.upperSection}>
                 <span className={styles.Logo}>
-                    {mobileView ? <Image src={Logo} alt={"footerLogo"} width={"200"} /> :
-                        <Image src={Logo} alt={"footerLogo"} width={"250"} />}
+                    {/* {mobileView ? null : <Image src={Logo} alt={"footerLogo"} width={"250"} />} */}
+
 
                 </span>
                 <span className={styles.moreDescription}>
@@ -60,7 +60,7 @@ function Footer() {
                     </span>
                     <span className={styles.addressName}>
                         <span>
-                            <Image src={map} alt={"footerLogo"} width={"50"} height={"50"} />
+                            {/* <Image src={map} alt={"footerLogo"} width={"50"} height={"50"} /> */}
                         </span>
                         <span>
                             Bishop Mangua center , Ngong Road
@@ -76,7 +76,7 @@ function Footer() {
                     </span>
                     <span className={styles.addressName}>
                         <span>
-                            <Image src={phone} alt={"phone"} width={"50"} height={"50"} />
+                            {/* <Image src={phone} alt={"phone"} width={"50"} height={"50"} /> */}
                         </span>
                         <span>
                             <a href="tel: +254722478277">
@@ -147,22 +147,10 @@ function Footer() {
             </span>
 
             <span className={styles.lowerSection}>
-                <span className={styles.copyright}>Copyright © 2022 , Pazoori </span>
+
 
                 <span className={styles.socialMedia}>
-                    <span className={styles.socialMediaWrapper}>
-                        <a href={"https://github.com"} target="_blank" rel="noreferrer">
-                            <Image src={facebook} alt={"facebook"} width={"90"} height={"90"} className={styles.socialIcons} />
-                        </a>
 
-                    </span>
-                    <span className={styles.socialMediaWrapper}>
-                        <a href={"https://github.com"} target="_blank" rel="noreferrer">
-                            <Image src={instagram} alt={"instagram"} width={"90"} height={"90"} className={styles.socialIcons} />
-                        </a>
-                    </span>
-
-                   
                     <span className={styles.socialMediaWrapper}>
                         <a href={"https://api.whatsapp.com/send?phone=%2B254722478277&text&app_absent=0"} target="_blank" rel="noreferrer" >
 
@@ -170,9 +158,10 @@ function Footer() {
                             <Image src={whatsapp} alt={"whatsapp"} width={"90"} height={"90"} className={styles.socialIcons} />
                         </a>
                     </span>
-                    
+
 
                 </span>
+                <span className={styles.copyright}>Copyright © 2022 , Pazoori </span>
 
             </span>
 

@@ -83,6 +83,9 @@ function Buyers() {
 
 
                     </span>
+                    <span className={styles.leftHeroSubTitle}>
+                        And to our
+                    </span>
                     <span className={styles.leftHeroTitle}>
                         COFFEE BUYERS
 

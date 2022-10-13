@@ -80,6 +80,9 @@ function Masters() {
                         {mobileScreen ? <Image src={SlideOneDescribe} alt={"SlideOneDescribe"} width="120" height="90" /> :
                             <Image src={SlideOneDescribe} alt={"SlideOneDescribe"} width="180" />}
                     </span>
+                    <span className={styles.leftHeroSubTitle}>
+                       We are the
+                    </span>
                     <span className={styles.leftHeroTitle}>
                         COFFEE MASTERS
 

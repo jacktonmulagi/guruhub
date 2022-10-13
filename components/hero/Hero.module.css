@@ -78,6 +78,14 @@
 
 }
 
+.leftHeroSubTitle {
+    display: flex;
+    font-size: 45px;
+    font-style: italic;
+    font-weight: lighter;
+    color: #c2800e
+}
+
 .leftHeroImage {
     display: flex;
 
@@ -98,8 +106,8 @@
 }
 
 .coffeeLineHight {
-    line-height: 1.6rem;
-    word-spacing: 0.1rem;
+    line-height: 1;
+    word-spacing: 0.2rem;
 }
 
 .rightHero {
@@ -135,6 +143,7 @@
     display: flex;
     border: 1px solid #fff;
     padding: 20px 40px;
+    margin-top: 2vh;
 
 }
 
@@ -218,6 +227,14 @@
 
 }
 
+.leftHeroSubTitle {
+    display: flex;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: lighter;
+    color: #c2800e
+}
+
 
 
 
@@ -292,7 +309,7 @@
 
     .leftHeroTitle {
         display: flex;
-        font-size: 40px;
+        font-size: 35px;
         font-family: 'Marcellus',
             sans-serif;
         align-items: center;
@@ -308,16 +325,18 @@
         font-weight: normal;
 
     }
+
     .leftHeroMoreDescription {
         display: flex;
         flex-direction: column;
         text-align: left;
         align-items: center;
-        font-weight: lighter;
-        font-size: 15px;
+        font-weight: normal;
+        font-size: 16px;
     }
+
     .coffeeLineHight {
-        line-height: 1.2rem;
+        line-height: 2;
         word-spacing: 0.0rem;
         text-align: center;
     }
@@ -336,7 +355,18 @@
         }
     }
 
+    .heroButtons {
+        display: flex;
+        border: 1px solid #fff;
+        padding: 20px 40px;
+        margin-top: 2vh;
 
+    }
+    .heroButtons:hover {
+        background-color: #bb9c79;
+        cursor: pointer;
+
+    }
 
 }
 
