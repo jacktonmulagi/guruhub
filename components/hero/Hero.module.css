@@ -35,6 +35,7 @@
     /* transition: all 1s ease-out; */
     background-color: black;
     height: 100vh;
+    scroll-snap-align: start;
 
 }
 
@@ -362,6 +363,7 @@
         margin-top: 2vh;
 
     }
+
     .heroButtons:hover {
         background-color: #bb9c79;
         cursor: pointer;

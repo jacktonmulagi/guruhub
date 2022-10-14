@@ -69,7 +69,7 @@ function Buyers() {
     return (
         <>
 
-            <div className={mobileScreen ? styles.main3Mobile : styles.main1} >
+            <div className={mobileScreen ? styles.main3Mobile : styles.main2} >
 
 
 

@@ -71,7 +71,7 @@ function Masters() {
     return (
         <>
 
-            <div className={mobileScreen ? styles.main2Mobile : styles.main1} >
+            <div className={mobileScreen ? styles.main2Mobile : styles.main} >
                 <span className={styles.rightHero}>
 
                 </span>
