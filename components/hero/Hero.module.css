@@ -249,6 +249,10 @@
 
 
 @media (max-width: 600px) {
+    .rightHero {
+        display: none;
+    }
+
     .main1Mobile {
         width: 100%;
         display: flex;
@@ -411,4 +415,101 @@
         text-align: center;
 
     }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .main1 {
+        width: 100%;
+        display: flex;
+        margin-top: 0vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5)15%, rgba(0, 0, 0, 0.6)),
+            url('../../public/asserts/sliderTwo.jpg');
+        animation: tablet 10s linear infinite;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Marcellus',
+            sans-serif;
+        transition: all 1s ease-out;
+        background-color: black;
+        height: 100%;
+        scroll-snap-align: start;
+
+    }
+
+    .main2 {
+        width: 100%;
+        display: flex;
+        margin-top: 0vh;
+
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image:linear-gradient(to right, rgba(0, 0, 0, 0.5)15%, rgba(0, 0, 0, 0.6)),
+            url('../../public/asserts/sliderThree.jpg');
+        animation: tablet 10s linear infinite;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Marcellus',
+            sans-serif;
+        /* transition: all 1s ease-in; */
+        background-color: black;
+        height: 100vh;
+        scroll-snap-align: start;
+    }
+
+
+    @keyframes tablet {
+        0% {
+            background-size: 150vw 100vh;
+        }
+
+        50% {
+            background-size: 120vw 100vh;
+        }
+
+        100% {
+            background-size: 150vw 100vh;
+        }
+    }
+
+    .main {
+        width: 100%;
+        display: flex;
+        margin-top: 0vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9)15%, rgba(0, 0, 0, 0.6)),
+            url('../../public/asserts/sliderOne.jpg');
+        animation: tablet 10s linear infinite;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Marcellus',
+            sans-serif;
+        transition: all 1s ease-in;
+        background-color: black;
+        height: 100vh;
+        scroll-snap-align: start;
+    }
+
+    .leftHero {
+        width: 100%;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+        justify-content: center;
+
+    }
+
+    .rightHero {
+        display: none;
+    }
+
+
 }
