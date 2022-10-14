@@ -1,15 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import styles from './Footer.module.css'
-import Logo from '../../public/asserts/Logo.svg'
-import map from '../../public/asserts/mapPin.svg'
-import phone from '../../public/asserts/contactUsPazoori.png'
-import facebook from '../../public/asserts/facebook.png'
-import instagram from '../../public/asserts/instagram.png'
-import twitter from '../../public/asserts/twitter.png'
 import whatsapp from '../../public/asserts/Whatsapp.png'
-import tiktok from '../../public/asserts/tiktok.png'
 import toast from 'react-hot-toast'
 import Image from 'next/image';
+import { BiPhoneCall } from 'react-icons/bi'
 function Footer() {
     const [mobileView, setMobileView] = useState(false);
     const [mobileNumber, setMobileNumber] = useState("");
@@ -60,7 +54,7 @@ function Footer() {
                     </span>
                     <span className={styles.addressName}>
                         <span>
-                            {/* <Image src={map} alt={"footerLogo"} width={"50"} height={"50"} /> */}
+
                         </span>
                         <span>
                             Bishop Mangua center , Ngong Road
@@ -76,7 +70,7 @@ function Footer() {
                     </span>
                     <span className={styles.addressName}>
                         <span>
-                            {/* <Image src={phone} alt={"phone"} width={"50"} height={"50"} /> */}
+
                         </span>
                         <span>
                             <a href="tel: +254722478277">
@@ -89,9 +83,30 @@ function Footer() {
 
 
                 </span>
+                <span className={styles.address}>
+                    <span className={styles.addressTitle}>
+                        Email Address
+                    </span>
+                    <span className={styles.addressName}>
+                        <span>
+
+                        </span>
+                        <span>
+                            <a href="mailto:Coffee@pazoori.com?subject=Coffee Enquiry&body=Hi! I am interested in knowing how much do you sell coffee. Please call me back" rel="noreferrer" target="_blank" title="Send us mail">
+
+                                Coffee@pazoori.com
+
+                            </a>
+
+                        </span>
+
+                    </span>
+
+
+                </span>
                 <span className={styles.form}>
                     <span className={styles.formTitle}>
-                        To make an order kindly send us your email address
+                        To make an order kindly fill the form below.
                     </span>
                     <span>
                         <form
