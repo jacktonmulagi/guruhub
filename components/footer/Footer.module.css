@@ -41,13 +41,14 @@
 }
 
 .addressTitle {
-    font-size: 25px;
+    font-size: 18px;
     letter-spacing: 3px;
 }
 
 .addressName {
     display: flex;
     align-items: center;
+    font-size: 14px;
 }
 
 .form {

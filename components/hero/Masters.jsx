@@ -77,7 +77,7 @@ function Masters() {
                 </span>
                 <span className={styles.leftHero}>
                     <span className={styles.leftHeroImage}>
-                        {mobileScreen ? <Image src={SlideOneDescribe} alt={"SlideOneDescribe"} width="120" height="90" /> :
+                        {mobileScreen ? null :
                             <Image src={SlideOneDescribe} alt={"SlideOneDescribe"} width="180" />}
                     </span>
                     <span className={styles.leftHeroSubTitle}>

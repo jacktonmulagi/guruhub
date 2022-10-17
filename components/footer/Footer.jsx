@@ -88,9 +88,7 @@ function Footer() {
                         Email Address
                     </span>
                     <span className={styles.addressName}>
-                        <span>
-
-                        </span>
+                       
                         <span>
                             <a href="mailto:Coffee@pazoori.com?subject=Coffee Enquiry&body=Hi! I am interested in knowing how much do you sell coffee. Please call me back" rel="noreferrer" target="_blank" title="Send us mail">
 
