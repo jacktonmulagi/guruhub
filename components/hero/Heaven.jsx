@@ -103,11 +103,10 @@ function Heaven() {
                 <span className={styles.leftHeroMoreDescription}>
 
                     <span className={styles.coffeeLineHight}>
-                        Pazoori is a licensed Kenyan company
-                        that specializes in:
+                        Pazoori Coffee specializes in:
                     </span>
 
-                    <ol type="i" className={styles.coffeeSpecialization}>
+                    <ul type="i" className={styles.coffeeSpecialization}>
                         <span>
                             <li>
                                 Coffee exports
@@ -126,13 +125,8 @@ function Heaven() {
                         </span>
 
 
-                    </ol>
-                    <span className={styles.coffeeLineHight}>
-                        We are one of the few Coffee Dealers
-                        who grow our own coffee over and<br />
-                        above what we source from the
-                        market thus guaranteeing quality.
-                    </span>
+                    </ul>
+                    
                 </span>
                 <Link href='/#contactUs' >
                     <span className={styles.heroButtons}>

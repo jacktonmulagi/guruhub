@@ -10,7 +10,7 @@
     color: white;
     justify-content: center;
     align-items: center;
-    font-family: 'Marcellus',
+    font-family: 'Poppins',
         sans-serif;
     /* transition: all 1s ease-in; */
     background-color: black;
@@ -30,7 +30,7 @@
     color: white;
     justify-content: center;
     align-items: center;
-    font-family: 'Marcellus',
+    font-family: 'Poppins',
         sans-serif;
     /* transition: all 1s ease-out; */
     background-color: black;
@@ -74,8 +74,9 @@
 .leftHeroTitle {
     display: flex;
     font-size: 90px;
-    font-family: 'Marcellus',
+    font-family: 'Poppins',
         sans-serif;
+    font-weight: 500;
 
 }
 
@@ -84,7 +85,9 @@
     font-size: 45px;
     font-style: italic;
     font-weight: lighter;
-    color: #c2800e
+    color: #c2800e;
+    font-family: 'Poppins',
+        sans-serif;
 }
 
 .leftHeroImage {
@@ -96,7 +99,7 @@
 .coffeeTypes {
     display: flex;
     gap: 3rem;
-    line-height: 1.6rem;
+    line-height: 2;
     word-spacing: 0.1rem;
 
 }
@@ -107,7 +110,7 @@
 }
 
 .coffeeLineHight {
-    line-height: 1;
+    line-height: 2;
     word-spacing: 0.2rem;
 }
 
@@ -126,8 +129,8 @@
 .leftHeroDescription {
     display: flex;
     text-align: center;
-    font-size: 23px;
-    font-weight: lighter;
+    font-size: 24px;
+    font-weight: bolder;
 
 }
 
@@ -136,8 +139,8 @@
     flex-direction: column;
     text-align: left;
     align-items: center;
-    font-weight: lighter;
-    font-size: 17px;
+    font-weight: bolder;
+    font-size: 18px;
 }
 
 .heroButtons {
@@ -145,12 +148,15 @@
     border: 1px solid #fff;
     padding: 20px 40px;
     margin-top: 2vh;
+    font-family: 'Poppins',
+        sans-serif;
 
 }
 
 .heroButtons:hover {
     background-color: #bb9c79;
     cursor: pointer;
+    font-weight: bolder;
 
 }
 
@@ -167,7 +173,7 @@
     color: white;
     justify-content: center;
     align-items: center;
-    font-family: 'Marcellus',
+    font-family: 'Poppins',
         sans-serif;
     /* transition: all 1s ease-in; */
     background-color: black;
@@ -193,7 +199,7 @@
     display: flex;
     width: 50%;
     padding-left: 2%;
-    font-family: 'Marcellus',
+    font-family: 'Poppins',
         sans-serif;
 }
 
@@ -203,7 +209,7 @@
     width: 73%;
     padding-top: 15%;
     gap: 0.5em;
-    font-family: 'Marcellus',
+    font-family: 'Poppins',
         sans-serif;
 
 
@@ -223,17 +229,19 @@
 .title {
     font-size: 64px;
     font-weight: lighter;
-    font-family: 'Marcellus',
+    font-family: 'Poppins',
         sans-serif;
 
 }
 
 .leftHeroSubTitle {
     display: flex;
-    font-size: 20px;
+    font-size: 24px;
     font-style: italic;
-    font-weight: lighter;
-    color: #c2800e
+    font-weight: bolder;
+    color: #c2800e;
+    font-family: 'Poppins',
+        sans-serif;
 }
 
 
@@ -260,12 +268,14 @@
         height: 100vh;
         background-size: cover;
         background-repeat: no-repeat;
-        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9)15%, rgba(0, 0, 0, 0.6)),
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9)15%, rgba(0, 0, 0, 0.7)),
             url('../../public/asserts/sliderTwo.jpg');
         color: white;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        font-family: 'Poppins',
+            sans-serif;
 
     }
 
@@ -282,6 +292,8 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        font-family: 'Poppins',
+            sans-serif;
 
     }
 
@@ -292,7 +304,7 @@
         height: 100vh;
         background-size: cover;
         background-repeat: no-repeat;
-        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9)15%, rgba(0, 0, 0, 0.5)),
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9)15%, rgba(0, 0, 0, 0.6)),
             url('../../public/asserts/sliderThree.jpg');
         color: white;
         flex-direction: column;
@@ -314,8 +326,8 @@
 
     .leftHeroTitle {
         display: flex;
-        font-size: 35px;
-        font-family: 'Marcellus',
+        font-size: 30px;
+        font-family: 'Poppins',
             sans-serif;
         align-items: center;
         justify-content: center;
@@ -326,7 +338,7 @@
     .leftHeroDescription {
         display: flex;
         text-align: center;
-        font-size: 16px;
+        font-size: 20px;
         font-weight: normal;
 
     }
@@ -336,13 +348,13 @@
         flex-direction: column;
         text-align: left;
         align-items: center;
-        font-weight: normal;
-        font-size: 16px;
+        font-weight: 450;
+        font-size: 15px;
     }
 
     .coffeeLineHight {
-        line-height: 1.3rem;
-        word-spacing: 0.0rem;
+        line-height: 1.5;
+        word-spacing: 0.1rem;
         text-align: center;
     }
 
@@ -374,6 +386,20 @@
 
     }
 
+    .coffeeSpecialization {
+        display: flex;
+        gap: 1.8rem;
+        line-height: 1.6rem;
+    }
+
+    .coffeeTypes {
+        display: flex;
+        gap: 1.8rem;
+        line-height: 1.4rem;
+        word-spacing: 0rem;
+
+    }
+
 }
 
 @media (max-width: 320px) {
@@ -395,7 +421,7 @@
     .leftHeroTitle {
         display: flex;
         font-size: 30px;
-        font-family: 'Roboto',
+        font-family: 'Poppins',
             sans-serif;
         align-items: center;
         justify-content: center;
@@ -407,8 +433,8 @@
 @media (max-width: 1280px) {
     .leftHeroTitle {
         display: flex;
-        font-size: 50px;
-        font-family: 'Roboto',
+        font-size: 35px;
+        font-family: 'Poppins',
             sans-serif;
         align-items: center;
         justify-content: center;
@@ -431,7 +457,7 @@
         color: white;
         justify-content: center;
         align-items: center;
-        font-family: 'Marcellus',
+        font-family: 'Poppins',
             sans-serif;
         transition: all 1s ease-out;
         background-color: black;
@@ -447,14 +473,14 @@
 
         background-size: contain;
         background-repeat: no-repeat;
-        background-image:linear-gradient(to right, rgba(0, 0, 0, 0.5)15%, rgba(0, 0, 0, 0.6)),
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5)15%, rgba(0, 0, 0, 0.6)),
             url('../../public/asserts/sliderThree.jpg');
         animation: tablet 10s linear infinite;
         color: white;
         justify-content: center;
         align-items: center;
-        font-family: 'Marcellus',
-            sans-serif;
+        font-family: 'Mali',
+            cursive;
         /* transition: all 1s ease-in; */
         background-color: black;
         height: 100vh;
@@ -488,7 +514,7 @@
         color: white;
         justify-content: center;
         align-items: center;
-        font-family: 'Marcellus',
+        font-family: 'Poppins',
             sans-serif;
         transition: all 1s ease-in;
         background-color: black;

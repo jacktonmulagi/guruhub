@@ -96,15 +96,13 @@ function Buyers() {
                     </span>
                     <span className={styles.leftHeroDescription}>
 
-                        We Are Licensed To Source Coffee On Your Behalf
+                        We are licensed to source type following types of  Coffee on your behalf
                     </span>
 
                     <span className={styles.leftHeroMoreDescription}>
+                        <br />
 
-                        <span>
-                            Types Of Coffee:
-                        </span>
-                        <ol type="i" className={styles.coffeeTypes}>
+                        <ul type="i" className={styles.coffeeTypes}>
                             <span>
                                 <li>
                                     Kenya E
@@ -144,7 +142,7 @@ function Buyers() {
                             </span>
 
 
-                        </ol>
+                        </ul>
                     </span>
 
                     <Link href='/#contactUs' >

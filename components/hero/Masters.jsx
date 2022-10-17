@@ -81,7 +81,7 @@ function Masters() {
                             <Image src={SlideOneDescribe} alt={"SlideOneDescribe"} width="180" />}
                     </span>
                     <span className={styles.leftHeroSubTitle}>
-                       We are the
+                        We are the
                     </span>
                     <span className={styles.leftHeroTitle}>
                         COFFEE MASTERS
@@ -104,6 +104,8 @@ function Masters() {
                                 graded after harvest.
                             </span>
                             <br />
+                            <br />
+
                             <span>
                                 The coffee beans are separated
                                 (sorted) and rated by bean size as well
@@ -112,12 +114,17 @@ function Masters() {
                                 coffee beans are higher in quality.
                             </span>
                             <br />
+                            <br />
+
                             <span>
                                 A general rule with Kenya coffee
                                 beans is that bigger beans have more
                                 essential oils that enhance the tastes
                                 and aromas.
                             </span>
+                            <br />
+
+
                         </span>
                     </span>
                     <Link href='/#contactUs' >
