@@ -10,7 +10,7 @@ import Link from 'next/link';
 
 function Buyers() {
     const [mobileScreen, setMobileScreen] = useState(false)
-    const [height, setHeight] = useState("100");
+    const [width, setWidth] = useState("100");
     const [display, setDisplay] = useState(styles.leftHero);
     const responsive = {
         desktop: {
@@ -32,9 +32,20 @@ function Buyers() {
     useEffect(() => {
         if (window.matchMedia("(max-width: 640px)").matches) {
             setMobileScreen(true)
-        } else {
-            setMobileScreen(false)
+            setWidth(120)
+        } else if (window.matchMedia("(max-width: 960px)").matches) {
+            setMobileScreen(true)
+            setWidth(140)
         }
+        else if (window.matchMedia("(max-width: 1280px)").matches) {
+            setMobileScreen(false)
+            setWidth(145)
+        }
+        else {
+            setMobileScreen(false)
+            setWidth(180)
+        }
+
 
 
         const handleShadow = () => {
@@ -79,7 +90,7 @@ function Buyers() {
                 <span className={styles.leftHero}>
                     <span className={styles.leftHeroImage}>
                         {mobileScreen ? null :
-                            <Image src={SlideOneDescribe} alt={"SlideOneDescribe"} width="180" />}
+                            <Image src={SlideOneDescribe} alt={"SlideOneDescribe"} width={width} />}
 
 
                     </span>
@@ -100,7 +111,7 @@ function Buyers() {
                     </span>
 
                     <span className={styles.leftHeroMoreDescription}>
-                        <br />
+                    
 
                         <ul type="i" className={styles.coffeeTypes}>
                             <span>

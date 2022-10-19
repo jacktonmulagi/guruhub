@@ -10,30 +10,24 @@ import Link from 'next/link';
 
 function Heaven() {
     const [mobileScreen, setMobileScreen] = useState(false)
-    const [height, setHeight] = useState("100");
+    const [width, setWidth] = useState("100");
     const [display, setDisplay] = useState(styles.leftHero);
-    const responsive = {
-        desktop: {
-            breakpoint: { max: 3000, min: 1024 },
-            items: 1,
-            slidesToSlide: 1 // optional, default to 1.
-        },
-        tablet: {
-            breakpoint: { max: 1024, min: 464 },
-            items: 1,
-            slidesToSlide: 1 // optional, default to 1.
-        },
-        mobile: {
-            breakpoint: { max: 464, min: 0 },
-            items: 1,
-            slidesToSlide: 1 // optional, default to 1.
-        }
-    };
+
     useEffect(() => {
         if (window.matchMedia("(max-width: 640px)").matches) {
             setMobileScreen(true)
-        } else {
+            setWidth(120)
+        } else if (window.matchMedia("(max-width: 960px)").matches) {
+            setMobileScreen(true)
+            setWidth(140)
+        }
+        else if (window.matchMedia("(max-width: 1280px)").matches) {
             setMobileScreen(false)
+            setWidth(140)
+        }
+        else {
+            setMobileScreen(false)
+            setWidth(180)
         }
 
 
@@ -81,7 +75,7 @@ function Heaven() {
             <span className={styles.leftHero}>
                 <span className={styles.leftHeroImage}>
                     {mobileScreen ? null :
-                        <Image src={SlideOneDescribe} alt={"SlideOneDescribe"} width="180" />}
+                        <Image src={SlideOneDescribe} alt={"SlideOneDescribe"} width={width} />}
 
 
                 </span>
@@ -126,7 +120,7 @@ function Heaven() {
 
 
                     </ul>
-                    
+
                 </span>
                 <Link href='/#contactUs' >
                     <span className={styles.heroButtons}>

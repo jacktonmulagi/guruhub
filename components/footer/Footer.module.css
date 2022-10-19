@@ -20,6 +20,8 @@
     justify-content: center;
     height: 80vh;
     gap: 0.5rem;
+    font-family: 'Handlee';
+
 
 
 }
@@ -30,7 +32,7 @@
     text-align: center;
     width: 30%;
     font-weight: bolder;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .address {
@@ -48,18 +50,20 @@
 .addressName {
     display: flex;
     align-items: center;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .form {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    font-family: 'Handlee';
 }
 
 .formTitle {
-    font-size: 14px;
+    font-size: 16px;
     letter-spacing: 2px;
+    font-family: 'Handlee';
 }
 
 .inputField {
@@ -69,7 +73,8 @@
     background: transparent;
     border: 1px solid #fff;
     color: #fff;
-    font-size: 14px;
+    font-size: 18px;
+    font-family: 'Handlee';
 }
 
 .form {
@@ -95,6 +100,7 @@
     cursor: pointer;
     background-color: #fff;
     border: none;
+    font-family: 'Handlee';
 }
 
 .buttonLabel:hover {
@@ -124,6 +130,7 @@
     width: 100%;
     justify-content: center;
     flex-direction: column;
+    font-family: 'Handlee';
 }
 
 .copyright {

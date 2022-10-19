@@ -10,7 +10,7 @@ import Link from 'next/link';
 
 function Masters() {
     const [mobileScreen, setMobileScreen] = useState(false)
-    const [height, setHeight] = useState("100");
+    const [width, setWidth] = useState("100");
     const [display, setDisplay] = useState(styles.leftHero);
     const responsive = {
         desktop: {
@@ -32,8 +32,18 @@ function Masters() {
     useEffect(() => {
         if (window.matchMedia("(max-width: 640px)").matches) {
             setMobileScreen(true)
-        } else {
+            setWidth(120)
+        }else if (window.matchMedia("(max-width: 960px)").matches) {
+            setMobileScreen(true)
+            setWidth(140)
+        }
+        else if (window.matchMedia("(max-width: 1280px)").matches) {
             setMobileScreen(false)
+            setWidth(140)
+        }
+        else {
+            setMobileScreen(false)
+            setWidth(180)
         }
 
 
@@ -78,7 +88,7 @@ function Masters() {
                 <span className={styles.leftHero}>
                     <span className={styles.leftHeroImage}>
                         {mobileScreen ? null :
-                            <Image src={SlideOneDescribe} alt={"SlideOneDescribe"} width="180" />}
+                            <Image src={SlideOneDescribe} alt={"SlideOneDescribe"} width={width} />}
                     </span>
                     <span className={styles.leftHeroSubTitle}>
                         We are the
@@ -104,7 +114,7 @@ function Masters() {
                                 graded after harvest.
                             </span>
                             <br />
-                            <br />
+
 
                             <span>
                                 The coffee beans are separated
@@ -114,7 +124,7 @@ function Masters() {
                                 coffee beans are higher in quality.
                             </span>
                             <br />
-                            <br />
+
 
                             <span>
                                 A general rule with Kenya coffee
