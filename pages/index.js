@@ -20,7 +20,7 @@ export default function Home() {
         <meta property="og:title" content=" By virtue of being licensed coffee dealers, we source<br /> and supply a wide variety of coffee beans that are tested for quality by our in-house coffee cupper" />
         <meta property="og:site_name" content="Pazoori Coffee" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="/ogBanner.png" />
+        <meta property="og:image" content="https://www.pazoori.com/ogBanner.png" />
         <meta property="og:locale" content="en_KE" />
         <meta property="og:description"
           content="At Pazoori we specialize in sourcing the highest quality coffee,<br /> coffee exports, coffee imports and are soon launching our roastery" />
