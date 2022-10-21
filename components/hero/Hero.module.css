@@ -99,8 +99,9 @@
          gap: 3rem;
          line-height: 1.5;
          word-spacing: 0.1rem;
-         font-family: 'Lato',
-             sans-serif;
+         text-align: center;
+         font-style: italic;
+
 
 
 
@@ -114,8 +115,8 @@
      .coffeeLineHight {
          line-height: 2;
          word-spacing: 0.2rem;
-         font-family: 'Lato',
-             sans-serif;
+         text-align: center;
+         font-style: italic;
 
      }
 
@@ -129,8 +130,7 @@
          display: flex;
          gap: 4rem;
          line-height: 1.6rem;
-         font-family: 'Lato',
-             sans-serif;
+
      }
 
      .leftHeroDescription {
@@ -138,8 +138,7 @@
          text-align: center;
          font-size: 30px;
          font-weight: normal;
-         font-family: 'Lato',
-             sans-serif;
+
 
      }
 
@@ -183,8 +182,7 @@
          color: white;
          justify-content: center;
          align-items: center;
-         font-family: 'Handlee',
-             cursive;
+
          /* transition: all 1s ease-in; */
          background-color: black;
          height: 100vh;
@@ -209,8 +207,7 @@
          display: flex;
          width: 50%;
          padding-left: 2%;
-         font-family: 'Handlee',
-             cursive;
+
      }
 
      .heroDescription {
@@ -219,8 +216,7 @@
          width: 73%;
          padding-top: 15%;
          gap: 0.5em;
-         font-family: 'Handlee',
-             cursive;
+
 
 
      }
@@ -239,8 +235,7 @@
      .title {
          font-size: 64px;
          font-weight: lighter;
-         font-family: 'Handlee',
-             cursive;
+
 
      }
 
@@ -364,6 +359,7 @@
          line-height: 1.5;
          word-spacing: 0.1rem;
          text-align: center;
+         font-style: italic;
      }
 
      @keyframes breath {
@@ -385,7 +381,7 @@
          border: 1px solid #fff;
          padding: 20px 40px;
          margin-top: 2vh;
-        
+
 
      }
 
@@ -406,6 +402,9 @@
          gap: 1.8rem;
          line-height: 1.4rem;
          letter-spacing: 0.08em;
+
+         text-align: center;
+         font-style: italic;
 
      }
 
@@ -474,7 +473,7 @@
          color: white;
          justify-content: center;
          align-items: center;
-       
+
          /* transition: all 1s ease-in; */
          background-color: black;
          height: 100vh;
@@ -487,13 +486,13 @@
          margin-top: 0vh;
          background-size: contain;
          background-repeat: no-repeat;
-         background-image:linear-gradient(to right, rgba(0, 0, 0, 0.5)15%, rgba(0, 0, 0, 0)),
+         background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5)15%, rgba(0, 0, 0, 0)),
              url('../../public/asserts/sliderTwo.jpg');
          animation: breath 10s linear infinite;
          color: white;
          justify-content: center;
          align-items: center;
-       
+
          /* transition: all 1s ease-out; */
          background-color: black;
          height: 100vh;
@@ -559,7 +558,7 @@
          font-style: italic;
          font-weight: lighter;
          color: #c2800e;
-        
+
      }
 
      .leftHeroImage {
@@ -573,6 +572,8 @@
          gap: 2rem;
          line-height: 2;
          word-spacing: 0.1rem;
+         text-align: center;
+         font-style: italic;
 
      }
 
@@ -582,8 +583,10 @@
      }
 
      .coffeeLineHight {
-          line-height: 1.6rem;
-          font-size: 18px;
+         line-height: 1.6rem;
+         font-size: 18px;
+         text-align: center;
+         font-style: italic;
      }
 
      .rightHero {
@@ -621,7 +624,7 @@
          border: 1px solid #fff;
          padding: 20px 40px;
          margin-top: 2vh;
-       
+
 
      }
 
@@ -639,13 +642,13 @@
 
          background-size: contain;
          background-repeat: no-repeat;
-         background-image:linear-gradient(to right, rgba(0, 0, 0, 0.5)15%, rgba(0, 0, 0, 0)),
+         background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5)15%, rgba(0, 0, 0, 0)),
              url('../../public/asserts/sliderThree.jpg');
          animation: breath 10s linear infinite;
          color: white;
          justify-content: center;
          align-items: center;
-        
+
          /* transition: all 1s ease-in; */
          background-color: black;
          height: 100vh;
@@ -670,7 +673,7 @@
          display: flex;
          width: 50%;
          padding-left: 2%;
-        
+
      }
 
      .heroDescription {
@@ -679,7 +682,7 @@
          width: 73%;
          padding-top: 15%;
          gap: 0.5em;
-       
+
 
 
      }
@@ -709,21 +712,21 @@
          font-style: italic;
          font-weight: bolder;
          color: #c2800e;
-        
+
      }
  }
 
 
+ /* ipad and tablets */
+ @media only screen and (min-width: 768px) and (max-width: 1024px) {
 
- @media (min-width: 768px) and (max-width: 1024px) {
-
-     .main1 {
+     .mainTablet {
          width: 100%;
          display: flex;
          margin-top: 0vh;
          background-size: cover;
          background-repeat: no-repeat;
-         background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5)15%, rgba(0, 0, 0, 0.6)),
+         background-image: 
              url('../../public/asserts/sliderTwo.jpg');
          animation: tablet 10s linear infinite;
          color: white;
@@ -732,20 +735,20 @@
          font-family: 'Poppins',
              sans-serif;
          transition: all 1s ease-out;
-         background-color: black;
+        
          height: 100%;
          scroll-snap-align: start;
 
      }
 
-     .main2 {
+     .main {
          width: 100%;
          display: flex;
          margin-top: 0vh;
 
          background-size: contain;
          background-repeat: no-repeat;
-         background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5)15%, rgba(0, 0, 0, 0.6)),
+         background-image: 
              url('../../public/asserts/sliderThree.jpg');
          animation: tablet 10s linear infinite;
          color: white;
@@ -754,7 +757,7 @@
          font-family: 'Mali',
              cursive;
          /* transition: all 1s ease-in; */
-         background-color: black;
+        
          height: 100vh;
          scroll-snap-align: start;
      }
@@ -780,7 +783,7 @@
          margin-top: 0vh;
          background-size: contain;
          background-repeat: no-repeat;
-         background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9)15%, rgba(0, 0, 0, 0.6)),
+         background-image: 
              url('../../public/asserts/sliderOne.jpg');
          animation: tablet 10s linear infinite;
          color: white;
@@ -789,7 +792,7 @@
          font-family: 'Poppins',
              sans-serif;
          transition: all 1s ease-in;
-         background-color: black;
+       
          height: 100vh;
          scroll-snap-align: start;
      }
@@ -809,5 +812,133 @@
          display: none;
      }
 
+     .leftHero {
+         width: 100%;
+         height: max-content;
+         padding-top: 50px;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         gap: 4px;
+         justify-content: center;
+     }
 
+     .leftHeroTitle {
+         display: flex;
+         font-size: 35px;
+         font-family: 'baskerville-urw';
+         align-items: center;
+         justify-content: center;
+         text-align: center;
+
+     }
+
+     .leftHeroDescription {
+         display: flex;
+         text-align: center;
+         font-size: 24px;
+         font-weight: normal;
+
+     }
+
+     .leftHeroMoreDescription {
+         display: flex;
+         flex-direction: column;
+         text-align: left;
+         align-items: center;
+         font-weight: normal;
+         font-size: 17px;
+     }
+
+     .coffeeLineHight {
+         line-height: 1.5;
+         word-spacing: 0.1rem;
+         text-align: center;
+         font-style: italic;
+     }
+
+     @keyframes breath {
+         0% {
+             background-size: 100% 100vh;
+         }
+
+         50% {
+             background-size: 105% 100vh;
+         }
+
+         100% {
+             background-size: auto 100vh;
+         }
+     }
+
+     .heroButtons {
+         display: flex;
+         border: 1px solid #fff;
+         padding: 20px 40px;
+         margin-top: 2vh;
+
+
+     }
+
+     .heroButtons:hover {
+         background-color: #bb9c79;
+         cursor: pointer;
+
+     }
+
+     .coffeeSpecialization {
+         display: flex;
+         gap: 1.8rem;
+         line-height: 1.6rem;
+     }
+
+     .coffeeTypes {
+         display: flex;
+         gap: 1.8rem;
+         line-height: 1.4rem;
+         letter-spacing: 0.08em;
+
+         text-align: center;
+         font-style: italic;
+
+     }
+
+     .leftHeroSubTitle {
+         display: flex;
+         font-size: 24px;
+         font-style: italic;
+         font-weight: bolder;
+         color: #c2800e;
+         font-family: 'Handlee',
+             cursive;
+     }
+
+
+
+ }
+
+ /* ----------- iPad 1, 2, Mini and Air ----------- */
+
+ /* Portrait and Landscape */
+ @media only screen and (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+     .main1 {
+         width: 100%;
+         display: flex;
+         margin-top: 0vh;
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5)15%, rgba(0, 0, 0, 0.6)),
+             url('../../public/asserts/sliderTwo.jpg');
+         animation: tablet 10s linear infinite;
+         color: white;
+         justify-content: center;
+         align-items: center;
+         font-family: 'Poppins',
+             sans-serif;
+         transition: all 1s ease-out;
+         background-color: blue;
+         height: 100%;
+         scroll-snap-align: start;
+
+     }
  }

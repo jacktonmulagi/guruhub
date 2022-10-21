@@ -1,18 +1,21 @@
 import Image from 'next/image'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import styles from './Hero.module.css'
-import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import SlideOneDescribe from '../../public/asserts/HeroIcon.svg';
-import { GiCoffeeBeans } from 'react-icons/gi'
 import sliderSeparatorImg from '../../public/asserts/sliderSeparatorImg.png';
 import Link from 'next/link';
+import { useIntersection } from './intersectionObserver';
 
 function Heaven() {
     const [mobileScreen, setMobileScreen] = useState(false)
     const [width, setWidth] = useState("100");
     const [display, setDisplay] = useState(styles.leftHero);
-
+    const [isInView, setIsInView] = useState(false);
+    const imgRef = useRef();
+    useIntersection(imgRef, () => {
+        setIsInView(true);
+    });
     useEffect(() => {
         if (window.matchMedia("(max-width: 640px)").matches) {
             setMobileScreen(true)
@@ -69,69 +72,55 @@ function Heaven() {
         }
     }, [])
     return (
-        <div className={mobileScreen ? styles.main1Mobile : styles.main1} >
-            <span className={styles.rightHero}>
-            </span>
-            <span className={styles.leftHero}>
-                <span className={styles.leftHeroImage}>
-                    {mobileScreen ? null :
-                        <Image src={SlideOneDescribe} alt={"SlideOneDescribe"} width={width} />}
+        <div ref={imgRef}>
 
+            {isInView && (
 
-                </span>
-                <span className={styles.leftHeroSubTitle}>
-                    Welcome  to
-                </span>
-                <span className={styles.leftHeroTitle}>
-                    COFFEE HEAVEN
-
-                </span>
-                <span className={styles.leftHeroCoffeeBeans}>
-                    <Image src={sliderSeparatorImg} alt={"sliderSeparatorImg"} />
-
-                </span>
-                <span className={styles.leftHeroDescription}>
-
-                    The Best kenyan Coffee.
-                </span>
-                <span className={styles.leftHeroMoreDescription}>
-
-                    <span className={styles.coffeeLineHight}>
-                        Pazoori Coffee specializes in:
+                <div className={mobileScreen ? styles.main1Mobile : styles.main1} >
+                    <span className={styles.rightHero}>
                     </span>
+                    <span className={styles.leftHero}>
+                        <span className={styles.leftHeroImage}>
+                            {mobileScreen ? null :
+                                <Image src={SlideOneDescribe} alt={"SlideOneDescribe"} width={width} />}
 
-                    <ul type="i" className={styles.coffeeSpecialization}>
-                        <span>
-                            <li>
-                                Coffee exports
-                            </li>
-                            <li>
-                                Coffee Imports
-                            </li>
+
                         </span>
-                        <span>
-                            <li>
-                                Value addition/roasting
-                            </li>
-                            <li>
-                                Coffee Packaging
-                            </li>
+                        <span className={styles.leftHeroSubTitle}>
+                            Welcome  to
+                        </span>
+                        <span className={styles.leftHeroTitle}>
+                            COFFEE HEAVEN
+
+                        </span>
+                        <span className={styles.leftHeroCoffeeBeans}>
+                            <Image src={sliderSeparatorImg} alt={"sliderSeparatorImg"} />
+
                         </span>
 
+                        <span className={styles.leftHeroMoreDescription}>
 
-                    </ul>
+                            <span className={styles.coffeeLineHight}>
+                                At Pazoori we specialize in sourcing the highest quality coffee,<br /> coffee exports, coffee imports and are soon launching our roastery
+                            </span>
 
-                </span>
-                <Link href='/#contactUs' >
-                    <span className={styles.heroButtons}>
-                        Request Sample
+
+
+                        </span>
+                        <Link href='/#contactUs' >
+                            <span className={styles.heroButtons}>
+                                Request Sample
+                            </span>
+                        </Link>
+
                     </span>
-                </Link>
-
-            </span>
 
 
+                </div>
+            )}
+           
         </div>
+      
 
 
 

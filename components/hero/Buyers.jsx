@@ -1,34 +1,24 @@
 import Image from 'next/image'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import styles from './Hero.module.css'
-import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import SlideOneDescribe from '../../public/asserts/HeroIcon.svg';
-import { GiCoffeeBeans } from 'react-icons/gi'
 import sliderSeparatorImg from '../../public/asserts/sliderSeparatorImg.png';
 import Link from 'next/link';
+import { useIntersection } from './intersectionObserver';
+
 
 function Buyers() {
     const [mobileScreen, setMobileScreen] = useState(false)
     const [width, setWidth] = useState("100");
+   
+    const [isInView, setIsInView] = useState(false);
+    const imgRef = useRef();
+    useIntersection(imgRef, () => {
+        setIsInView(true);
+    });
     const [display, setDisplay] = useState(styles.leftHero);
-    const responsive = {
-        desktop: {
-            breakpoint: { max: 3000, min: 1024 },
-            items: 1,
-            slidesToSlide: 1 // optional, default to 1.
-        },
-        tablet: {
-            breakpoint: { max: 1024, min: 464 },
-            items: 1,
-            slidesToSlide: 1 // optional, default to 1.
-        },
-        mobile: {
-            breakpoint: { max: 464, min: 0 },
-            items: 1,
-            slidesToSlide: 1 // optional, default to 1.
-        }
-    };
+    
     useEffect(() => {
         if (window.matchMedia("(max-width: 640px)").matches) {
             setMobileScreen(true)
@@ -78,96 +68,64 @@ function Buyers() {
         }
     }, [])
     return (
-        <>
+        <div ref={imgRef}>
+            {isInView && (
+                <div className={mobileScreen ? styles.main3Mobile : styles.main2} >
 
-            <div className={mobileScreen ? styles.main3Mobile : styles.main2} >
 
 
-
-                <span className={styles.rightHero}>
-
-                </span>
-                <span className={styles.leftHero}>
-                    <span className={styles.leftHeroImage}>
-                        {mobileScreen ? null :
-                            <Image src={SlideOneDescribe} alt={"SlideOneDescribe"} width={width} />}
-
+                    <span className={styles.rightHero}>
 
                     </span>
-                    <span className={styles.leftHeroSubTitle}>
-                        And to our
-                    </span>
-                    <span className={styles.leftHeroTitle}>
-                        COFFEE BUYERS
-
-                    </span>
-                    <span className={styles.leftHeroCoffeeBeans}>
-                        <Image src={sliderSeparatorImg} alt={"sliderSeparatorImg"} />
-
-                    </span>
-                    <span className={styles.leftHeroDescription}>
-
-                        We are licensed to source type following types of  Coffee on your behalf
-                    </span>
-
-                    <span className={styles.leftHeroMoreDescription}>
-                    
-
-                        <ul type="i" className={styles.coffeeTypes}>
-                            <span>
-                                <li>
-                                    Kenya E
-                                </li>
-                                <li>
-                                    Kenya PB
-                                </li>
-                                <li>
-                                    Kenya AA
-                                </li>
-
-                            </span>
-
-                            <span>
-                                <li>
-                                    Kenya AB
-                                </li>
-                                <li>
-                                    Kenya C
-                                </li>
-                                <li>
-                                    Kenya TT
-                                </li>
-                            </span>
-                            <span>
+                    <span className={styles.leftHero}>
+                        <span className={styles.leftHeroImage}>
+                            {mobileScreen ? null :
+                                <Image src={SlideOneDescribe} alt={"SlideOneDescribe"} width={width} />}
 
 
-                                <li>
-                                    Kenya T
-                                </li>
-                                <li>
-                                    Kenya MH/ML
-                                </li>
-                                <li>
-                                    Etc
-                                </li>
-                            </span>
-
-
-                        </ul>
-                    </span>
-
-                    <Link href='/#contactUs' >
-                        <span className={styles.heroButtons}>
-                            Request Sample
                         </span>
-                    </Link>
+                        <span className={styles.leftHeroSubTitle}>
+                            And to our
+                        </span>
+                        <span className={styles.leftHeroTitle}>
+                            COFFEE BUYERS
 
-                </span>
+                        </span>
+                        <span className={styles.leftHeroCoffeeBeans}>
+                            <Image src={sliderSeparatorImg} alt={"sliderSeparatorImg"} />
+
+                        </span>
+                        <span className={styles.leftHeroDescription}>
 
 
-            </div>
+                        </span>
 
-        </>
+                        <span className={styles.leftHeroMoreDescription}>
+
+
+                            <span type="i" className={styles.coffeeTypes}>
+
+
+                                By virtue of being licensed coffee dealers, we source<br /> and supply a wide variety of coffee beans that are tested for quality by our in-house coffee cupper
+
+
+                            </span>
+                        </span>
+
+                        <Link href='/#contactUs' >
+                            <span className={styles.heroButtons}>
+                                Request Sample
+                            </span>
+                        </Link>
+
+                    </span>
+
+
+                </div>
+            )}
+
+
+        </div>
 
     )
 }
