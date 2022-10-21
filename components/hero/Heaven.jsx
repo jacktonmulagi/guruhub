@@ -10,7 +10,6 @@ import { useIntersection } from './intersectionObserver';
 function Heaven() {
     const [mobileScreen, setMobileScreen] = useState(false)
     const [width, setWidth] = useState("100");
-    const [display, setDisplay] = useState(styles.leftHero);
     const [isInView, setIsInView] = useState(false);
     const imgRef = useRef();
     useIntersection(imgRef, () => {
@@ -34,38 +33,8 @@ function Heaven() {
         }
 
 
-        const handleShadow = () => {
-
-            if (window.scrollY <= 0) {
-                setHeight(100);
-                setDisplay(styles.leftHero)
-            } else if (window.scrollY > 0 && window.scrollY < 50) {
-                setHeight(80);
-                setDisplay(styles.leftHero)
-            }
-            else if (window.scrollY >= 50 && window.scrollY < 100) {
-                setHeight(60);
-                setDisplay(styles.leftHeroOriginal)
-            } else if (window.scrollY >= 100 && window.scrollY < 150) {
-                setHeight(40);
-                setDisplay(styles.leftHeroOriginal)
-            }
-            else if (window.scrollY >= 150 && window.scrollY < 200) {
-                setHeight(30);
-                setDisplay(styles.leftHeroOriginal)
-            }
-            else if (window.scrollY >= 200 && window.scrollY < 250) {
-                setHeight(20);
-                setDisplay(styles.leftHeroOriginal)
-            }
-            else if (window.scrollY >= 250 && window.scrollY < 300) {
-                setHeight(0);
-                setDisplay(styles.leftHeroOriginal)
-            }
-
-
-        };
-        window.addEventListener('scroll', handleShadow);
+       
+      
 
         if (window.matchMedia("(max-width: 640px)").matches) {
             setMobileScreen(true)

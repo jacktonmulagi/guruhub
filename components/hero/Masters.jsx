@@ -10,7 +10,6 @@ import { useIntersection } from './intersectionObserver';
 function Masters() {
     const [mobileScreen, setMobileScreen] = useState(false)
     const [width, setWidth] = useState("100");
-    const [display, setDisplay] = useState(styles.leftHero);
     const [isInView, setIsInView] = useState(false);
     const imgRef = useRef();
     useIntersection(imgRef, () => {
@@ -34,32 +33,8 @@ function Masters() {
         }
 
 
-        const handleShadow = () => {
-            console.log(window.scrollY)
-
-            if (window.scrollY < 100) {
-                setHeight(100);
-                setDisplay(styles.leftHeroOriginal)
-            }
-            else if (window.scrollY > 100 && window.scrollY < 200) {
-                setHeight(100);
-                setDisplay(styles.leftHero)
-            } else if (window.scrollY > 200 && window.scrollY < 250) {
-                setHeight(95);
-                setDisplay(styles.leftHero)
-
-            }
-            else if (window.scrollY > 250 && window.scrollY < 300) {
-                setHeight(80);
-                setDisplay(styles.leftHero)
-
-            }
-            else if (window.scrollY >= 300 && window.scrollY < 400) {
-                setHeight(30);
-                setDisplay(styles.leftHeroOriginal)
-            }
-        };
-        window.addEventListener('scroll', handleShadow);
+       
+      
 
         if (window.matchMedia("(max-width: 640px)").matches) {
             setMobileScreen(true)
@@ -88,11 +63,7 @@ function Masters() {
                             <Image src={sliderSeparatorImg} alt={"sliderSeparatorImg"} />
 
                         </span>
-                        {/* <span className={styles.leftHeroDescription}>
-
-                        We Grow The Highest Quality Coffee
-                    </span> */}
-
+                       
                         <span className={styles.leftHeroMoreDescription}>
                             <span className={styles.coffeeLineHight}>
                                 <span>
@@ -101,23 +72,6 @@ function Masters() {
                                 </span>
                                 <br />
 
-
-                                {/* <span>
-                                The coffee beans are separated
-                                (sorted) and rated by bean size as well
-                                as shape, color, and density, with the
-                                general assumption being that bigger
-                                coffee beans are higher in quality.
-                            </span> */}
-                                <br />
-
-
-                                {/* <span>
-                                A general rule with Kenya coffee
-                                beans is that bigger beans have more
-                                essential oils that enhance the tastes
-                                and aromas.
-                            </span> */}
                                 <br />
 
 

@@ -11,14 +11,14 @@ import { useIntersection } from './intersectionObserver';
 function Buyers() {
     const [mobileScreen, setMobileScreen] = useState(false)
     const [width, setWidth] = useState("100");
-   
+
     const [isInView, setIsInView] = useState(false);
     const imgRef = useRef();
     useIntersection(imgRef, () => {
         setIsInView(true);
     });
-    const [display, setDisplay] = useState(styles.leftHero);
-    
+
+
     useEffect(() => {
         if (window.matchMedia("(max-width: 640px)").matches) {
             setMobileScreen(true)
@@ -38,30 +38,7 @@ function Buyers() {
 
 
 
-        const handleShadow = () => {
-            // console.log(window.scrollY)
-
-            if (window.scrollY <= 250) {
-                setHeight(100);
-                setDisplay(styles.leftHeroOriginal)
-            } else if (window.scrollY > 320 && window.scrollY < 350) {
-                setHeight(100);
-                setDisplay(styles.leftHero)
-            }
-            else if (window.scrollY > 400 && window.scrollY < 450) {
-                setHeight(70);
-                setDisplay(styles.leftHero)
-            }
-            else if (window.scrollY > 450) {
-                setHeight(30);
-                setDisplay(styles.leftHeroOriginal)
-            }
-
-
-
-
-        };
-        window.addEventListener('scroll', handleShadow);
+       
 
         if (window.matchMedia("(max-width: 640px)").matches) {
             setMobileScreen(true)
