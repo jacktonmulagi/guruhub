@@ -1,8 +1,12 @@
-@import url("https://db.onlinewebfonts.com/c/11a477d3ac9d8fde4dd37b3cfe2c65e2?family=URWBaskervilleW01-Regular");
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../public/asserts/fonts/URW\ Baskerville\ W01\ Regular.ttf');
+}
 
 html {
   scroll-behavior: smooth;
 }
+
 body {
   padding: 0;
   margin: 0;
