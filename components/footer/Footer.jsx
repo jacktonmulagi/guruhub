@@ -40,9 +40,9 @@ function Footer() {
 
     }
     return (
-        <div ref={imgRef}>
+        <div ref={imgRef} id={"contactUs"}>
             {isInView && (
-                <div className={styles.container} id={"contactUs"}>
+                <div className={styles.container} >
                     <span className={styles.upperSection}>
                         <span className={styles.Logo}>
                             {/* {mobileView ? null : <Image src={Logo} alt={"footerLogo"} width={"250"} />} */}

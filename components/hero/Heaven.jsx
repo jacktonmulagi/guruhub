@@ -33,15 +33,15 @@ function Heaven() {
         }
 
 
-       
-      
+
+
 
         if (window.matchMedia("(max-width: 640px)").matches) {
             setMobileScreen(true)
         }
     }, [])
     return (
-        <div ref={imgRef}>
+        <div ref={imgRef} id={"/"}>
 
             {isInView && (
 
@@ -87,9 +87,9 @@ function Heaven() {
 
                 </div>
             )}
-           
+
         </div>
-      
+
 
 
 
