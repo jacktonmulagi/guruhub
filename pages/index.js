@@ -13,12 +13,12 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <meta charset="utf-8" />
-        <title>Pazoori Coffee Kenya -We specialize in sourcing the highest quality coffee </title>
+        <title>Pazoori-We specialize in sourcing the highest quality coffee </title>
         <meta name="description"
           content="  By virtue of being licensed coffee dealers, we source and supply a wide variety of coffee beans that are tested for quality by our in-house coffee cupper" />
         <meta property="og:url " content="https://www.pazoori.com/" />
         <meta property="og:title" content=" At Pazoori we specialize in sourcing the highest quality coffee, coffee exports, coffee imports and are soon launching our roastery" />
-        <meta property="og:site_name" content="Pazoori Coffee" />
+        <meta property="og:site_name" content="Pazoori Coffee Kenya" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://www.pazoori.com/ogBanner.png" />
         <meta property="og:locale" content="en_KE" />
@@ -29,6 +29,8 @@ export default function Home() {
         <meta name="description"
           content=" Kenya is renown for some of the worlds finest gourmet coffees and this is what we consistently  grow and produce in our plantations located in the Rift Valley" />
         <link rel="icon" href="/favicon.ico" />
+        
+       
       </Head>
 
       <main className={styles.main}>

@@ -40,7 +40,7 @@ function Footer() {
 
     }
     return (
-        <div ref={imgRef} id={"contactUs"}>
+        <footer ref={imgRef} id={"contactUs"}>
             {isInView && (
                 <div className={styles.container} >
                     <span className={styles.upperSection}>
@@ -191,7 +191,7 @@ function Footer() {
             )}
 
 
-        </div>
+        </footer>
 
     )
 }
