@@ -38,7 +38,7 @@ function Herald() {
                     </span>
                     <span className={styles.lowerSectionParagraph}>If you don’t have a coffee filter, you can use one of two kinds of filter substitutes. Either find another way to strain the coffee, or make coffee in water and then separate the liquid from the ground coffee...
 
-                       
+
 
                     </span>
                     <span className={styles.readMore}>
@@ -73,9 +73,8 @@ function Herald() {
                     </span>
                     <span className={styles.lowerSectionParagraph}>
                         When it comes to coffee, there are a few popular choices that people seem to gravitate towards.
-
+                        
                         Cappuccino and mocha are two of those choices, but what’s the difference between them?..
-
 
                     </span>
                     <span className={styles.readMore}>
@@ -92,3 +91,5 @@ function Herald() {
 }
 
 export default Herald
+
+
