@@ -9,6 +9,7 @@ import { useIntersection } from './intersectionObserver';
 
 function Heaven() {
     const [mobileScreen, setMobileScreen] = useState(false)
+    
     const [width, setWidth] = useState("100");
     const [isInView, setIsInView] = useState(false);
     const imgRef = useRef();
@@ -20,7 +21,7 @@ function Heaven() {
             setMobileScreen(true)
             setWidth(120)
         } else if (window.matchMedia("(max-width: 960px)").matches) {
-            setMobileScreen(true)
+           
             setWidth(140)
         }
         else if (window.matchMedia("(max-width: 1280px)").matches) {
@@ -39,6 +40,7 @@ function Heaven() {
         if (window.matchMedia("(max-width: 640px)").matches) {
             setMobileScreen(true)
         }
+       
     }, [])
     return (
         <div ref={imgRef} id={"/"}>
@@ -52,7 +54,6 @@ function Heaven() {
                         <span className={styles.leftHeroImage}>
                             {mobileScreen ? null :
                                 <Image src={SlideOneDescribe} alt={"SlideOneDescribe"} width={width} />}
-
 
                         </span>
                         <span className={styles.leftHeroSubTitle}>

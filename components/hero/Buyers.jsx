@@ -24,7 +24,6 @@ function Buyers() {
             setMobileScreen(true)
             setWidth(120)
         } else if (window.matchMedia("(max-width: 960px)").matches) {
-            setMobileScreen(true)
             setWidth(140)
         }
         else if (window.matchMedia("(max-width: 1280px)").matches) {

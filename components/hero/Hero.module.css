@@ -720,44 +720,53 @@
  /* ipad and tablets */
  @media only screen and (min-width: 768px) and (max-width: 1024px) {
 
-     .mainTablet {
+     .main1 {
          width: 100%;
          display: flex;
          margin-top: 0vh;
-         background-size: cover;
+         background-size: contain;
          background-repeat: no-repeat;
-         background-image: 
+         background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5)15%, rgba(0, 0, 0, 0.5)),
              url('../../public/asserts/sliderTwo.jpg');
          animation: tablet 10s linear infinite;
          color: white;
          justify-content: center;
          align-items: center;
-         font-family: 'Poppins',
-             sans-serif;
-         transition: all 1s ease-out;
-        
-         height: 100%;
+         transition: all 1s ease-in;
+         height: 100vh;
          scroll-snap-align: start;
-
      }
 
      .main {
+          width: 100%;
+          display: flex;
+          margin-top: 0vh;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7)15%, rgba(0, 0, 0, 0.7)),
+          url('../../public/asserts/sliderOne.jpg');
+          animation: tablet 10s linear infinite;
+          color: white;
+          justify-content: center;
+          align-items: center;
+          transition: all 1s ease-in;
+          height: 100vh;
+          scroll-snap-align: start;
+     }
+
+     .main2 {
          width: 100%;
          display: flex;
          margin-top: 0vh;
-
          background-size: contain;
          background-repeat: no-repeat;
-         background-image: 
+         background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5)15%, rgba(0, 0, 0, 0.5)),
              url('../../public/asserts/sliderThree.jpg');
          animation: tablet 10s linear infinite;
          color: white;
          justify-content: center;
          align-items: center;
-         font-family: 'Mali',
-             cursive;
-         /* transition: all 1s ease-in; */
-        
+         transition: all 1s ease-in;
          height: 100vh;
          scroll-snap-align: start;
      }
@@ -765,37 +774,18 @@
 
      @keyframes tablet {
          0% {
-             background-size: 150vw 100vh;
+             background-size: auto 100vh;
          }
 
          50% {
-             background-size: 120vw 100vh;
+             background-size: auto 100vh;
          }
 
          100% {
-             background-size: 150vw 100vh;
+             background-size: auto 100vh;
          }
      }
 
-     .main {
-         width: 100%;
-         display: flex;
-         margin-top: 0vh;
-         background-size: contain;
-         background-repeat: no-repeat;
-         background-image: 
-             url('../../public/asserts/sliderOne.jpg');
-         animation: tablet 10s linear infinite;
-         color: white;
-         justify-content: center;
-         align-items: center;
-         font-family: 'Poppins',
-             sans-serif;
-         transition: all 1s ease-in;
-       
-         height: 100vh;
-         scroll-snap-align: start;
-     }
 
      .leftHero {
          width: 100%;
@@ -825,8 +815,7 @@
 
      .leftHeroTitle {
          display: flex;
-         font-size: 35px;
-         font-family: 'baskerville-urw';
+         font-size: 50px;
          align-items: center;
          justify-content: center;
          text-align: center;
@@ -847,29 +836,20 @@
          text-align: left;
          align-items: center;
          font-weight: normal;
-         font-size: 17px;
+         font-size: 22px;
      }
 
      .coffeeLineHight {
-         line-height: 1.5;
-         word-spacing: 0.1rem;
+         display: flex;
+         gap: 1.8rem;
+         line-height: 2rem;
+         letter-spacing: 0.08em;
+
          text-align: center;
          font-style: italic;
      }
 
-     @keyframes breath {
-         0% {
-             background-size: 100% 100vh;
-         }
-
-         50% {
-             background-size: 105% 100vh;
-         }
-
-         100% {
-             background-size: auto 100vh;
-         }
-     }
+    
 
      .heroButtons {
          display: flex;
@@ -895,7 +875,7 @@
      .coffeeTypes {
          display: flex;
          gap: 1.8rem;
-         line-height: 1.4rem;
+         line-height: 2rem;
          letter-spacing: 0.08em;
 
          text-align: center;
@@ -905,12 +885,11 @@
 
      .leftHeroSubTitle {
          display: flex;
-         font-size: 24px;
+         font-size: 35px;
          font-style: italic;
          font-weight: bolder;
          color: #c2800e;
-         font-family: 'Handlee',
-             cursive;
+        
      }
 
 
@@ -920,7 +899,7 @@
  /* ----------- iPad 1, 2, Mini and Air ----------- */
 
  /* Portrait and Landscape */
- @media only screen and (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+ /* @media only screen and (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
      .main1 {
          width: 100%;
          display: flex;
@@ -941,4 +920,4 @@
          scroll-snap-align: start;
 
      }
- }
+ } */
