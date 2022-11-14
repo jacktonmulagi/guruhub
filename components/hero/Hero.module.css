@@ -356,8 +356,8 @@
      }
 
      .coffeeLineHight {
-         line-height: 1.5;
-         word-spacing: 0.1rem;
+         line-height: 1.4rem;
+         word-spacing: 0.08rem;
          text-align: center;
          font-style: italic;
      }
@@ -388,6 +388,7 @@
      .heroButtons:hover {
          background-color: #bb9c79;
          cursor: pointer;
+         
 
      }
 
@@ -398,13 +399,10 @@
      }
 
      .coffeeTypes {
-         display: flex;
-         gap: 1.8rem;
-         line-height: 1.4rem;
-         letter-spacing: 0.08em;
-
-         text-align: center;
-         font-style: italic;
+          line-height: 1.4rem;
+          word-spacing: 0.08rem;
+          text-align: center;
+          font-style: italic;
 
      }
 
