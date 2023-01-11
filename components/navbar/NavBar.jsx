@@ -174,7 +174,7 @@ function NavBar() {
                         </span>
                     </Link>
 
-                    <Link href='http://51.158.100.191:8069/jobs' target="_blank">
+                    <Link href='https://africomintranet.com/jobs' target="_blank">
                         <span className={styles.mainNavLink} onMouseOver={() => handleMouseOver("ContactUs")} onMouseOut={handleMouseOut}>
                             {currentNavElementId == "ContactUs" ? <span className={styles.activeNavWrapper}>
                                 <GiCoffeeBeans color='#8B621C' size={20} />
