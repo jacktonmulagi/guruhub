@@ -5,7 +5,6 @@ function White() {
     const [height, setHeight] = useState("10");
     useEffect(() => {
         const handleShadow = () => {
-            const position = window.pageYOffset;
 
             if (window.scrollY >= 1600 && window.scrollY < 1800) {
 
