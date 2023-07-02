@@ -2,7 +2,7 @@ import Image from 'next/image'
 import React, { useEffect, useState, useRef } from 'react'
 import styles from './Hero.module.css'
 import 'react-multi-carousel/lib/styles.css';
-import SlideOneDescribe from '../../public/asserts/HeroIcon.svg';
+import SlideOneDescribe from "../../public/asserts/guruhub.png";
 import sliderSeparatorImg from '../../public/asserts/sliderSeparatorImg.png';
 import Link from 'next/link';
 import { useIntersection } from './intersectionObserver';
@@ -49,14 +49,18 @@ function Masters() {
                     <span className={styles.leftHero}>
                         <span className={styles.leftHeroImage}>
                             {mobileScreen ? null :
-                                <Image src={SlideOneDescribe} alt={"SlideOneDescribe"} width={width} />}
+                               <Image
+                               src={SlideOneDescribe}
+                               alt={"SlideOneDescribe"}
+                               width={width}
+                               height={100}
+                             />}
                         </span>
                         <span className={styles.leftHeroSubTitle}>
-                            We are the
+                        Transform your Communication Strategy with
                         </span>
                         <span className={styles.leftHeroTitle}>
-                            COFFEE MASTERS
-
+                        Guruhub Innovators
                         </span>
                         <span className={styles.leftHeroCoffeeBeans}>
                             <Image src={sliderSeparatorImg} alt={"sliderSeparatorImg"} />
@@ -67,7 +71,7 @@ function Masters() {
                             <span className={styles.coffeeLineHight}>
                                 <span>
 
-                                    Kenya is renown for some of the worlds finest gourmet coffees and this is what we consistently <br /> grow and produce in our plantations located in the Rift Valley
+                                Reliable Bulk SMS Services Tailored for Churches and Religious Institutions <br /> Strengthen Congregational Bonds: Reach out to your church members with personalized and timely messages.
                                 </span>
                                 <br />
 
@@ -78,7 +82,7 @@ function Masters() {
                         </span>
                         <Link href='/#contactUs' >
                             <span className={styles.heroButtons}>
-                                Request Sample
+                            Share Your Message
                             </span>
                         </Link>
 

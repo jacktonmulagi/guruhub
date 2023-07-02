@@ -88,7 +88,7 @@
     font-weight: bold;
     cursor: pointer;
     z-index: 5;
-    color: #8B621C;
+    color: #4790fc;
 }
 
 .menuOpen {
@@ -169,10 +169,11 @@
         display: flex;
         left: 0;
         top: 0;
-        width: 75%;
+        width: 100%;
         height: 100vh;
-        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9)15%, rgba(0, 0, 0, 0)),
-            url('../../public/asserts/sliderTwo.jpg');
+        background-size: cover;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9)50%, rgba(0, 0, 0, 0)),
+            url('../../public/asserts/masters.jpeg');
         background-color: #ecf0f3;
         padding: 1px 10px;
         flex-direction: column;

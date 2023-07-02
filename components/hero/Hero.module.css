@@ -6,8 +6,8 @@
          margin-top: 0vh;
          background-size: contain;
          background-repeat: no-repeat;
-         background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5)15%, rgba(0, 0, 0, 0)),
-             url('../../public/asserts/sliderOne.jpg');
+         background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6)50%, rgba(0, 0, 0, 1.5)),
+             url('../../public/asserts/masters.jpeg');
          animation: breath 10s linear infinite;
          color: white;
          justify-content: center;
@@ -25,8 +25,8 @@
          margin-top: 0vh;
          background-size: contain;
          background-repeat: no-repeat;
-         background-image:
-             url('../../public/asserts/sliderTwo.jpg');
+         background-image:linear-gradient(to right, rgba(0, 0, 0, 0.5)10%, rgba(0.5, 0.5, 0.5, 0.9)),
+             url('../../public/asserts/heaven.jpeg');
          animation: breath 10s linear infinite;
          color: white;
          justify-content: center;
@@ -84,8 +84,9 @@
          font-size: 45px;
          font-style: italic;
          font-weight: lighter;
-         color: #c2800e;
+         color: #4790fc;
          font-family: 'Handlee';
+         text-align: center;
      }
 
      .leftHeroImage {
@@ -163,7 +164,7 @@
      }
 
      .heroButtons:hover {
-         background-color: #bb9c79;
+         background-color: #4790fc;
          cursor: pointer;
          font-weight: bolder;
 
@@ -176,8 +177,8 @@
 
          background-size: contain;
          background-repeat: no-repeat;
-         background-image:
-             url('../../public/asserts/sliderThree.jpg');
+         background-image:linear-gradient(to right, rgba(0, 0, 0, 0.5)10%, rgba(0.5, 0.5, 0.5, 0.9)),
+         url('../../public/asserts/buyer.jpeg');
          animation: breath 10s linear infinite;
          color: white;
          justify-content: center;
@@ -244,7 +245,8 @@
          font-size: 24px;
          font-style: italic;
          font-weight: bolder;
-         color: #c2800e;
+         text-align: center;
+         color: #4790fc;
          font-family: 'Handlee',
              cursive;
      }
@@ -274,13 +276,13 @@
          height: 100vh;
          background-size: cover;
          background-repeat: no-repeat;
-         background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9)15%, rgba(0, 0, 0, 0.5)),
-             url('../../public/asserts/sliderTwo.jpg');
+         background-image:linear-gradient(to right, rgba(0, 0, 0, 0.5)10%, rgba(0.5, 0.5, 0.5, 0.9)),
+             url('../../public/asserts/heaven.jpeg');
          color: white;
          flex-direction: column;
+        
          align-items: center;
          justify-content: center;
-
 
      }
 
@@ -291,8 +293,8 @@
          height: 100vh;
          background-size: cover;
          background-repeat: no-repeat;
-         background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9)15%, rgba(0, 0, 0, 0.6)),
-             url('../../public/asserts/sliderOne.jpg');
+         background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6)50%, rgba(0, 0, 0, 1.5)),
+         url('../../public/asserts/masters.jpeg');
          color: white;
          flex-direction: column;
          align-items: center;
@@ -308,8 +310,8 @@
          height: 100vh;
          background-size: cover;
          background-repeat: no-repeat;
-         background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9)15%, rgba(0, 0, 0, 0.5)),
-             url('../../public/asserts/sliderThree.jpg');
+         background-image:linear-gradient(to right, rgba(0, 0, 0, 0.5)10%, rgba(0.5, 0.5, 0.5, 0.9)),
+         url('../../public/asserts/buyer.jpeg');
          color: white;
          flex-direction: column;
          align-items: center;
@@ -386,7 +388,7 @@
      }
 
      .heroButtons:hover {
-         background-color: #bb9c79;
+         background-color: #4790fc;
          cursor: pointer;
          
 
@@ -411,7 +413,8 @@
          font-size: 24px;
          font-style: italic;
          font-weight: bolder;
-         color: #c2800e;
+         color: #4790fc;
+         text-align: center;
          font-family: 'Handlee',
              cursive;
      }
@@ -427,11 +430,12 @@
          height: 100vh;
          background-size: cover;
          background-repeat: no-repeat;
-         background-image: url('../../public/asserts/sliderTwo.jpg');
          color: white;
          flex-direction: column;
          align-items: center;
          justify-content: center;
+         background-image:linear-gradient(to right, rgba(0, 0, 0, 0.5)10%, rgba(0.5, 0.5, 0.5, 0.9)),
+         url('../../public/asserts/heaven.jpeg');
 
      }
 
@@ -465,8 +469,8 @@
          margin-top: 0vh;
          background-size: contain;
          background-repeat: no-repeat;
-         background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6)15%, rgba(0, 0, 0, 0.5)),
-             url('../../public/asserts/sliderOne.jpg');
+         background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6)50%, rgba(0, 0, 0, 1.5)),
+         url('../../public/asserts/masters.jpeg');
          animation: breath 10s linear infinite;
          color: white;
          justify-content: center;
@@ -484,8 +488,8 @@
          margin-top: 0vh;
          background-size: contain;
          background-repeat: no-repeat;
-         background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5)15%, rgba(0, 0, 0, 0)),
-             url('../../public/asserts/sliderTwo.jpg');
+         background-image:linear-gradient(to right, rgba(0, 0, 0, 0.5)10%, rgba(0.5, 0.5, 0.5, 0.9)),
+         url('../../public/asserts/heaven.jpeg');
          animation: breath 10s linear infinite;
          color: white;
          justify-content: center;
@@ -555,7 +559,8 @@
          font-size: 45px;
          font-style: italic;
          font-weight: lighter;
-         color: #c2800e;
+         color:#4790fc;
+         text-align: center;
 
      }
 
@@ -627,7 +632,7 @@
      }
 
      .heroButtons:hover {
-         background-color: #bb9c79;
+         background-color: #4790fc;
          cursor: pointer;
          font-weight: bolder;
 
@@ -640,8 +645,8 @@
 
          background-size: contain;
          background-repeat: no-repeat;
-         background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5)15%, rgba(0, 0, 0, 0)),
-             url('../../public/asserts/sliderThree.jpg');
+         background-image:linear-gradient(to right, rgba(0, 0, 0, 0.5)10%, rgba(0.5, 0.5, 0.5, 0.9)),
+         url('../../public/asserts/buyer.jpeg');
          animation: breath 10s linear infinite;
          color: white;
          justify-content: center;
@@ -709,7 +714,8 @@
          font-size: 24px;
          font-style: italic;
          font-weight: bolder;
-         color: #c2800e;
+         text-align: center;
+         color: #4790fc;
 
      }
  }
@@ -724,8 +730,8 @@
          margin-top: 0vh;
          background-size: contain;
          background-repeat: no-repeat;
-         background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5)15%, rgba(0, 0, 0, 0.5)),
-             url('../../public/asserts/sliderTwo.jpg');
+         background-image:linear-gradient(to right, rgba(0, 0, 0, 0.5)10%, rgba(0.5, 0.5, 0.5, 0.9)),
+             url('../../public/asserts/heaven.jpeg');
          animation: tablet 10s linear infinite;
          color: white;
          justify-content: center;
@@ -741,8 +747,8 @@
           margin-top: 0vh;
           background-size: contain;
           background-repeat: no-repeat;
-          background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7)15%, rgba(0, 0, 0, 0.7)),
-          url('../../public/asserts/sliderOne.jpg');
+          background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6)50%, rgba(0, 0, 0, 1.5)),
+             url('../../public/asserts/masters.jpeg');
           animation: tablet 10s linear infinite;
           color: white;
           justify-content: center;
@@ -758,8 +764,8 @@
          margin-top: 0vh;
          background-size: contain;
          background-repeat: no-repeat;
-         background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5)15%, rgba(0, 0, 0, 0.5)),
-             url('../../public/asserts/sliderThree.jpg');
+         background-image:linear-gradient(to right, rgba(0, 0, 0, 0.5)10%, rgba(0.5, 0.5, 0.5, 0.9)),
+         url('../../public/asserts/buyer.jpeg');
          animation: tablet 10s linear infinite;
          color: white;
          justify-content: center;
@@ -856,10 +862,10 @@
          margin-top: 2vh;
 
 
-     }
+     }master.jpeg
 
      .heroButtons:hover {
-         background-color: #bb9c79;
+         background-color: #4790fc;
          cursor: pointer;
 
      }
@@ -886,7 +892,7 @@
          font-size: 35px;
          font-style: italic;
          font-weight: bolder;
-         color: #c2800e;
+         color: #4790fc;
         
      }
 

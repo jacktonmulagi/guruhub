@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import styles from './Navbar.module.css'
-import Logo from '../../public/asserts/Logo.svg'
+import Logo from '../../public/asserts/guruhub.svg'
 import Image from 'next/image'
 import { GiCoffeeBeans } from 'react-icons/gi';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
+import { FaSms } from 'react-icons/fa'
 import { useRouter } from 'next/router';
 import Link from 'next/link'
 
@@ -12,7 +13,7 @@ function NavBar() {
     const [currentNavElementId, setCurrentNavElementId] = useState("")
     const [shadow, setShadow] = useState(false);
     const [mobileNav, setMobileNav] = useState(false);
-    const [imageHeight, setImageHeight] = useState(44)
+    const [imageHeight, setImageHeight] = useState(90)
     const [imageWidth, setImageWidth] = useState(200)
     const [mobileView, setMobileView] = useState(false);
 
@@ -42,7 +43,7 @@ function NavBar() {
     }, []);
     useEffect(() => {
         if (window.matchMedia("(max-width: 640px)").matches) {
-            setImageHeight(30)
+            setImageHeight(50)
             setImageWidth(150)
             setMobileView(true)
 
@@ -88,13 +89,13 @@ function NavBar() {
                         <Link href='/' >
                             <span onClick={() => handleNav()} className={styles.mainNavLink} onMouseOver={() => handleMouseOver("Home")} onMouseOut={handleMouseOut}>
                                 {currentNavElementId == "Home" || router.pathname == "/" ? <span className={styles.activeNavWrapper}>
-                                    <GiCoffeeBeans color='#8B621C' size={20} />
+                                    <FaSms color='#4790fc' size={20} />
                                 </span> : null}
                                 <span>
                                     Home
                                 </span>
                                 {currentNavElementId == "Home" || router.pathname == "/" ? <span className={styles.activeNavWrapper}>
-                                    <GiCoffeeBeans color='#8B621C' size={20} />
+                                    <FaSms color='#4790fc' size={20} />
                                 </span> : null}
 
                             </span>
@@ -102,8 +103,8 @@ function NavBar() {
 
                         <Link href='/#contactUs'>
                             <span onClick={() => handleNav()} className={styles.mainNavLink} onMouseOver={() => handleMouseOver("ContactUs")} onMouseOut={handleMouseOut}>
-                                {currentNavElementId == "ContactUs" ? <span className={styles.activeNavWrapper}>
-                                    <GiCoffeeBeans color='#8B621C' size={20} />
+                                {currentNavElementId == "ContactUs" || router.pathname == "/#contactUs"? <span className={styles.activeNavWrapper}>
+                                    <FaSms color='#4790fc' size={20} />
                                 </span> : null}
 
                                 <span>
@@ -111,7 +112,7 @@ function NavBar() {
 
                                 </span>
                                 {currentNavElementId == "ContactUs" ? <span className={styles.activeNavWrapper}>
-                                    <GiCoffeeBeans color='#8B621C' size={20} />
+                                    <FaSms color='#4790fc' size={20} />
                                 </span> : null}
 
 
@@ -119,10 +120,10 @@ function NavBar() {
                             </span>
                         </Link>
 
-                        <Link href='https://africomintranet.com/jobs' target="_blank">
+                        <Link href='https://www.jacktonmulagi.com/' target="_blank">
                             <span onClick={() => handleNav()} className={styles.mainNavLink} onMouseOver={() => handleMouseOver("ContactUs")} onMouseOut={handleMouseOut}>
                                 {currentNavElementId == "ContactUs" ? <span className={styles.activeNavWrapper}>
-                                    <GiCoffeeBeans color='#8B621C' size={20} />
+                                    <FaSms color='#4790fc' size={20} />
                                 </span> : null}
 
                                 <span>
@@ -130,7 +131,7 @@ function NavBar() {
 
                                 </span>
                                 {currentNavElementId == "ContactUs" ? <span className={styles.activeNavWrapper}>
-                                    <GiCoffeeBeans color='#8B621C' size={20} />
+                                    <FaSms color='#4790fc' size={20} />
                                 </span> : null}
 
 
@@ -146,13 +147,13 @@ function NavBar() {
                     <Link href='/'>
                         <span className={styles.mainNavLink} onMouseOver={() => handleMouseOver("Home")} onMouseOut={handleMouseOut}>
                             {currentNavElementId == "Home" || router.pathname == "/" ? <span className={styles.activeNavWrapper}>
-                                <GiCoffeeBeans color='#8B621C' size={20} />
+                                <FaSms color='#4790fc' size={20} />
                             </span> : null}
                             <span>
                                 home
                             </span>
                             {currentNavElementId == "Home" || router.pathname == "/" ? <span className={styles.activeNavWrapper}>
-                                <GiCoffeeBeans color='#8B621C' size={20} />
+                                <FaSms color='#4790fc' size={20} />
                             </span> : null}
 
                         </span>
@@ -162,29 +163,29 @@ function NavBar() {
                     <Link href='/#contactUs'>
                         <span className={styles.mainNavLink} onMouseOver={() => handleMouseOver("ContactUs")} onMouseOut={handleMouseOut}>
                             {currentNavElementId == "ContactUs" ? <span className={styles.activeNavWrapper}>
-                                <GiCoffeeBeans color='#8B621C' size={20} />
+                                <FaSms color='#4790fc' size={20} />
                             </span> : null}
 
                             <span>
                                 contact us
                             </span>
                             {currentNavElementId == "ContactUs" ? <span className={styles.activeNavWrapper}>
-                                <GiCoffeeBeans color='#8B621C' size={20} />
+                                <FaSms color='#4790fc' size={20} />
                             </span> : null}
                         </span>
                     </Link>
 
-                    <Link href='https://africomintranet.com/jobs' target="_blank">
+                    <Link href='https://www.jacktonmulagi.com/' target="_blank">
                         <span className={styles.mainNavLink} onMouseOver={() => handleMouseOver("ContactUs")} onMouseOut={handleMouseOut}>
                             {currentNavElementId == "ContactUs" ? <span className={styles.activeNavWrapper}>
-                                <GiCoffeeBeans color='#8B621C' size={20} />
+                                <FaSms color='#4790fc' size={20} />
                             </span> : null}
 
                             <span>
                                 Jobs
                             </span>
                             {currentNavElementId == "ContactUs" ? <span className={styles.activeNavWrapper}>
-                                <GiCoffeeBeans color='#8B621C' size={20} />
+                                <FaSms color='#4790fc' size={20} />
                             </span> : null}
                         </span>
                     </Link>
